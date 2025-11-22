@@ -95,8 +95,9 @@ if options == '2':
 [2] GAMKERS DDOS
 [3] MaxPhisher
 [4] TrackIP
-[5] Voltar ao painel
-[6] Sair
+[5] Clownters.py
+[6] Voltar ao painel
+[7] Sair
 Escolha: """)
 
     # -------- RED HAWK --------
@@ -115,15 +116,24 @@ Escolha: """)
         subprocess.run("pipx ensurepath", shell=True)
         subprocess.run("pipx install maxphisher", shell=True)
         subprocess.run("maxphisher", shell=True)
+    
+    # -------- Track Ip ----------
     elif tool == '4':
         subprocess.run("apt install git curl -y", shell=True)
         subprocess.run(["git", "clone", 'https://github.com/htr-tech/track-ip.git'], cwd=BASE_DIR)
         subprocess.run(["bash", "trackip"], cwd=BASE_DIR / 'track-ip')
 
+    # -------- Clownters --------
     elif tool == '5':
+        subprocess.run("apt-get update -y && apt-get upgrade -y", shell=True)
+        subprocess.run("apt-get install -y git python2", shell=True)
+        subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
+        sunprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
+    
+    elif tool == '6':
         reiniciar()
 
-    elif tool == '6':
+    elif tool == '7':
         exit()
 
     saida = input("""
@@ -156,7 +166,3 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
-
-
-
-
