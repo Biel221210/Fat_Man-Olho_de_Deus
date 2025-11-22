@@ -117,7 +117,7 @@ Escolha: """)
         subprocess.run("maxphisher", shell=True)
     elif tool == '4':
         subprocess.run("apt install git curl -y", shell=True)
-        subprocess.run(["git", "clone", "https://github.com/htr-tech/track-ip.git", cwd=BASE_DIR / 'track-ip'])
+        subprocess.run(["git", "clone", "https://github.com/htr-tech/track-ip.git"], cwd=BASE_DIR / 'track-ip')
         subprocess.run(["bash", "trackip"], cwd=BASE_DIR / 'track-ip')
 
     elif tool == '5':
@@ -156,5 +156,6 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
 
