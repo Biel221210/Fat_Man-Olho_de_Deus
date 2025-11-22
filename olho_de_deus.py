@@ -18,6 +18,7 @@ options = input("""
 [1] Informações de sites
 [2] Instalar ferramentas
 [3] Sair
+[4] Atualizar o painel
 Escolha uma opção: """)
 
 # --------------------------
@@ -91,4 +92,7 @@ Escolha: """)
 
     elif tool == '4':
         exit()
-
+    if options == '4':
+        BASE_DIR = Path.home() / "Fat_Man-Olho_de_Deus"
+        BASE_DIR.mkdir(exist_ok=True)
+        
