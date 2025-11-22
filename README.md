@@ -7,7 +7,7 @@ INSTALACAO
 sudo apt install git
 sudo apt install python3
 
-git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus
+git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
 
 cd Fat_Man-Olho_de_Deus
 
