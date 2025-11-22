@@ -5,10 +5,12 @@ from pathlib import Path
 import platform
 
 # SETA O VERDÃO AQUI
-if platform.system() == "Windows":
-    os.system("color 0A")
-else:
-    print("\033[1;32m", end="")
+# Cores estilo terminal hacker verdão
+VERDE = "\033[92m"
+VERDE_NEON = "\033[38;5;46m"
+RESET = "\033[0m"
+
+print("\033[0;32m")
 
 subprocess.run(['clear'])
 subprocess.run(['cat', 'art_ascii'])
@@ -176,5 +178,6 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
 
