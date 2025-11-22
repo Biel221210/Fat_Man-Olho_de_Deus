@@ -109,5 +109,11 @@ Escolha: """)
     if options == '4':
         subprocess.run(['git', 'pull'], cwd=f"{base_dir}Fat_Man-Olho_de_Deus")
 
-
-
+    saida = input("""
+                [1] Continuar no painel
+                [2] Sair
+                Escolha: """)
+    if saida == '1':
+        subprocess.run(['python3', 'olho_de_deus.py'])
+    else:
+        exit()
