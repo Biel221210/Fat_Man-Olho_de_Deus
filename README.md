@@ -6,6 +6,7 @@ INSTALACAO
 
 
 LINUX:
+
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install git
@@ -18,6 +19,7 @@ cd Fat_Man-Olho_de_Deus
 python3 olho_de_deus.py
 
 WINDOWS:
+
 wsl --install
 
 sudo apt install git
