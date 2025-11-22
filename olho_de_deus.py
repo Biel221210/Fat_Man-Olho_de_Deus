@@ -48,32 +48,29 @@ if options == '1':
 [3] JusBrasil
 [4] Sair
 Escolha: """)
-    
+
     if info == '1':
         subprocess.run(['cat', 'INFO SITE ETAPA'])
+    
     elif info == '2':
         subprocess.run(['cat', 'INFO PREFEITURA HORTOLANDIA'])
-saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
 
-if saida == '1':
-    subprocess.run(['python3', str(__file__)])
-else:
-    exit()
-    
     elif info == '3':
         subprocess.run(['cat', 'INFO JUSBRASIL'])
-   saida = input("""
+    
+    elif info == '4':
+        exit()
+    
+    # TELA DE SAÍDA / CONTINUAÇÃO
+    saida = input("""
 [1] Continuar no painel
 [2] Sair
 Escolha: """)
 
-if saida == '1':
-    subprocess.run(['python3', str(__file__)])
-else:
-    exit()
+    if saida == '1':
+        subprocess.run(['python3', 'olho_de_deus.py'])
+    else:
+        exit()
 
 
 # ------------------------
@@ -94,15 +91,17 @@ Escolha: """)
         url = 'https://github.com/Tuhinshubhra/RED_HAWK'
         subprocess.run(["git", "clone", url], cwd=base_dir)
         subprocess.run(["php", "rhawk.php"], cwd=f"{base_dir}/RED_HAWK")
+
 saida = input("""
 [1] Continuar no painel
 [2] Sair
 Escolha: """)
 
-if saida == '1':
-    subprocess.run(['python3', str(__file__)])
-else:
-    exit()
+    if saida == '1':
+        subprocess.run(['python3', 'olho_de_deus.py'])
+    else:
+        exit()
+
 
     # GAMKERS DDOS
     elif tool == '2':
@@ -113,35 +112,18 @@ else:
         url2 = "https://github.com/gamkers/GAMKERS-DDOS.git"
         subprocess.run(["git", "clone", url2], cwd=base_dir)
 
-        subprocess.run(
-            ["python2", "GAMKERS-DDOS.py"],
-            cwd=f"{base_dir}/GAMKERS-DDOS"
-        )
 saida = input("""
 [1] Continuar no painel
 [2] Sair
 Escolha: """)
 
-if saida == '1':
-    subprocess.run(['python3', str(__file__)])
-else:
-    exit()
+    if saida == '1':
+        subprocess.run(['python3', 'olho_de_deus.py'])
+    else:
+        exit()
 
-    # MAXPHISHER
-    elif tool == '3':
-        install_pkg("pipx")
-        subprocess.run("pipx install maxphisher", shell=True)
-        subprocess.run("maxphisher", shell=True)
-saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
 
-if saida == '1':
-    subprocess.run(['python3', str(__file__)])
-else:
-    exit()
-
+    # TRACK IP
     elif tool =='4':
         url3 = "https://github.com/htr-tech/track-ip.git"
         print('Requer sudo, provalvelmente voce tera de por a senha do seu Pc')
@@ -157,13 +139,15 @@ saida = input("""
 [2] Sair
 Escolha: """)
 
-if saida == '1':
-    subprocess.run(['python3', str(__file__)])
-else:
-    exit()
+    if saida == '1':
+        subprocess.run(['python3', 'olho_de_deus.py'])
+    else:
+        exit()
+
 
     elif tool == '5':
         exit()
     if options == '4':
         subprocess.run(['git', 'pull'], cwd=f"{base_dir}Fat_Man-Olho_de_Deus")
+
 
