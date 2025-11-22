@@ -1,153 +1,154 @@
-import os
-import sys
-import time
+#!/usr/bin/env python3
 import subprocess
-from pathlib import Path
-import shutil
 import os
+from pathlib import Path
 
-clear = "clear" if shutil.which("clear") else "cls"
-subprocess.run([clear])
+# ==========================================
+# CONFIG UNIVERSAL
+# ==========================================
+BASE_DIR = Path.home() / "Fat_Man-Olho_de_Deus"
+BASE_DIR.mkdir(exist_ok=True)
 
-home = str(Path.home())
-base_dir = f"{home}/fat_man"
+# Limpa tela
+subprocess.run(["clear"])
 
-os.makedirs(base_dir, exist_ok=True)
+# Mostra ASCII se existir
+ascii_path = BASE_DIR / "art_ascii"
+if ascii_path.exists():
+    subprocess.run(["cat", str(ascii_path)])
 
-subprocess.run(["cat", "art_ascii"])
+# ==========================================
+# FUNÇÃO DE ATUALIZAÇÃO DO PAINEL
+# ==========================================
+def atualizar_repo():
+    if (BASE_DIR / ".git").exists():
+        print("Atualizando painel...")
+        subprocess.run(["git", "pull"], cwd=BASE_DIR)
+    else:
+        print("Repositório não encontrado. Clonando...")
+        subprocess.run([
+            "git", "clone",
+            "https://github.com/gabrielbuso/Fat_Man-Olho_de_Deus.git",
+            str(BASE_DIR)
+        ])
+
+# ==========================================
+# LOOP PRINCIPAL DO PAINEL
+# ==========================================
+
+def reiniciar():
+    subprocess.run(["python3", str(Path(__file__))])
+    exit()
+
 print("Olá meu filho. Diga, o que queres?")
 
 options = input("""
-[1] Informações de sites
-[2] Instalar ferramentas
-[3] Sair
-[4] Atualizar o painel
-Escolha uma opção: """)
+      [1] Informações de sites
+      [2] Instalar ferramentas
+      [3] Atualizar Painel
+      [4] Sair
+Escolha: """)
 
-# --------------------------
-#   FUNÇÃO PARA INSTALAR
-# --------------------------
-def install_pkg(pkg_name):
-    if shutil.which("apt"):
-        subprocess.run(f"sudo apt install -y {pkg_name}", shell=True)
-    elif shutil.which("pkg"):
-        subprocess.run(f"pkg install {pkg_name}", shell=True)
-    elif shutil.which("pacman"):
-        subprocess.run(f"sudo pacman -S --noconfirm {pkg_name}", shell=True)
-    else:
-        print("Gerenciador de pacotes não suportado.")
-
-# ------------------------
-#  OPTION 1 — INFORMAÇÕES
-# ------------------------
-
+# ==========================================
+# OPÇÃO 1 — INFO DE SITES
+# ==========================================
 if options == '1':
     info = input("""
 [1] Etapa.com
 [2] Hortolândia.gov
 [3] JusBrasil
-[4] Sair
+[4] Voltar ao painel
+[5] Sair
 Escolha: """)
 
     if info == '1':
-        subprocess.run(['cat', 'INFO SITE ETAPA'])
-    
+        subprocess.run(["cat", str(BASE_DIR / "INFO SITE ETAPA")])
+
     elif info == '2':
-        subprocess.run(['cat', 'INFO PREFEITURA HORTOLANDIA'])
+        subprocess.run(["cat", str(BASE_DIR / "INFO PREFEITURA HORTOLANDIA")])
 
     elif info == '3':
-        subprocess.run(['cat', 'INFO JUSBRASIL'])
-    
+        subprocess.run(["cat", str(BASE_DIR / "INFO JUSBRASIL")])
+
     elif info == '4':
+        reiniciar()
+
+    elif info == '5':
         exit()
-    
-    # TELA DE SAÍDA / CONTINUAÇÃO
+
     saida = input("""
 [1] Continuar no painel
 [2] Sair
 Escolha: """)
 
     if saida == '1':
-        subprocess.run(['python3', 'olho_de_deus.py'])
+        reiniciar()
     else:
         exit()
 
-
-# ------------------------
-#  OPTION 2 — FERRAMENTAS
-# ------------------------
-
+# ==========================================
+# OPÇÃO 2 — FERRAMENTAS
+# ==========================================
 if options == '2':
     tool = input("""
 [1] RED HAWK
 [2] GAMKERS DDOS
 [3] MaxPhisher
-[4] IP Tracker
+[4] Voltar ao painel
 [5] Sair
 Escolha: """)
 
-    # RED HAWK
+    # -------- RED HAWK --------
     if tool == '1':
-        url = 'https://github.com/Tuhinshubhra/RED_HAWK'
-        subprocess.run(["git", "clone", url], cwd=base_dir)
-        subprocess.run(["php", "rhawk.php"], cwd=f"{base_dir}/RED_HAWK")
+        subprocess.run(["git", "clone", "https://github.com/Tuhinshubhra/RED_HAWK"], cwd=BASE_DIR)
+        subprocess.run(["php", "rhawk.php"], cwd=BASE_DIR / "RED_HAWK")
 
-saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-
-    if saida == '1':
-        subprocess.run(['python3', 'olho_de_deus.py'])
-    else:
-        exit()
-
-
-    # GAMKERS DDOS
+    # -------- GAMKERS DDOS --------
     elif tool == '2':
-        install_pkg("python2")
-        install_pkg("git")
-        install_pkg("figlet")
+        subprocess.run(["git", "clone", "https://github.com/gamkers/GAMKERS-DDOS.git"], cwd=BASE_DIR)
+        subprocess.run(["python2", "GAMKERS-DDOS.py"], cwd=BASE_DIR / "GAMKERS-DDOS")
 
-        url2 = "https://github.com/gamkers/GAMKERS-DDOS.git"
-        subprocess.run(["git", "clone", url2], cwd=base_dir)
+    # -------- MaxPhisher --------
+    elif tool == '3':
+        subprocess.run("pip install pipx", shell=True)
+        subprocess.run("pipx ensurepath", shell=True)
+        subprocess.run("pipx install maxphisher", shell=True)
+        subprocess.run("maxphisher", shell=True)
 
-saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-
-    if saida == '1':
-        subprocess.run(['python3', 'olho_de_deus.py'])
-    else:
-        exit()
-
-
-    # TRACK IP
-    elif tool =='4':
-        url3 = "https://github.com/htr-tech/track-ip.git"
-        print('Requer sudo, provalvelmente voce tera de por a senha do seu Pc')
-        time.sleep (1.5)
-        subprocess.run('sudo apt install git curl -y', shell=True)
-        subprocess.run(['git', 'clone', url3], cwd=base_dir)
-        subprocess.run(
-            ['bash', 'trackip'],
-            cwd=f"{base_dir}/track-ip"
-        )
-saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-
-    if saida == '1':
-        subprocess.run(['python3', 'olho_de_deus.py'])
-    else:
-        exit()
-
+    elif tool == '4':
+        reiniciar()
 
     elif tool == '5':
         exit()
-    if options == '4':
-        subprocess.run(['git', 'pull'], cwd=f"{base_dir}Fat_Man-Olho_de_Deus")
 
+    saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+    if saida == '1':
+        reiniciar()
+    else:
+        exit()
+
+# ==========================================
+# OPÇÃO 3 — ATUALIZAR
+# ==========================================
+if options == '3':
+    atualizar_repo()
+    saida = input("""
+[1] Voltar ao painel
+[2] Sair
+Escolha: """)
+
+    if saida == '1':
+        reiniciar()
+    else:
+        exit()
+
+# ==========================================
+# OPÇÃO 4 — SAIR
+# ==========================================
+if options == '4':
+    exit()
 
