@@ -2,6 +2,16 @@
 import subprocess
 import os
 from pathlib import Path
+import platform
+
+# SETA O VERDÃO AQUI
+if platform.system() == "Windows":
+    os.system("color 0A")
+else:
+    print("\033[1;32m", end="")
+
+subprocess.run(['clear'])
+subprocess.run(['cat', 'art_ascii'])
 
 # ==========================================
 # CONFIG UNIVERSAL
@@ -166,4 +176,5 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
