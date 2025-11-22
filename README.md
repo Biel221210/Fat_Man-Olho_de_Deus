@@ -1,32 +1,124 @@
-# Fat_Man-Olho_de_Deus
-painel brazuca privado
+# FAT_MAN - Olho de Deus 🔥
 
+Um painel em Python estilo "hacking terminal aesthetic", criado para
+facilitar acesso a ferramentas, executar utilidades e automatizar
+tarefas como clonagem de repositórios, rodar scripts, consultar
+informações e instalar ferramentas externas.
 
-# INSTALAÇÃO
+Este painel foi criado originalmente para Linux/Kali/Termux, mas
+**funciona no Windows** com algumas adaptações.
 
+------------------------------------------------------------------------
 
-# LINUX:
+## 🚀 Instalação no Windows
 
-sudo apt update && sudo apt upgrade -y
+1.  Instale o **Python 3**\
+    https://www.python.org/downloads/
 
-sudo apt install git
-sudo apt install python3
+2.  Instale o **Git**\
+    https://git-scm.com/download/win
 
-git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
+3.  Instale o **PHP** (necessário para rodar o RED HAWK)\
+    https://windows.php.net/download/
 
-cd Fat_Man-Olho_de_Deus
+4.  Instale o `pipx` (opcional, mas recomendado)
 
-python3 olho_de_deus.py
+    Abra o terminal (CMD/PowerShell):
 
-# WINDOWS:
+        python -m pip install pipx
+        pipx ensurepath
 
-wsl --install
+5.  Baixe o repositório do FAT_MAN:
 
-sudo apt install git
-sudo apt install python3
+        git clone https://github.com/SEU_USUARIO/Fat_Man-Olho_de_Deus
 
-git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
+6.  Entre na pasta:
 
-cd Fat_Man-Olho_de_Deus
+        cd Fat_Man-Olho_de_Deus
 
-python3 olho_de_deus.py
+7.  Execute o painel:
+
+        python olho_de_deus.py
+
+------------------------------------------------------------------------
+
+## 🐧 Instalação no Linux / Kali / Termux
+
+    git clone https://github.com/SEU_USUARIO/Fat_Man-Olho_de_Deus
+    cd Fat_Man-Olho_de_Deus
+    python3 olho_de_deus.py
+
+------------------------------------------------------------------------
+
+## 🔧 Funções do Painel
+
+### **1. Informações de sites**
+
+Mostra informações armazenadas em arquivos (`INFO SITE ETAPA`,
+`INFO PREFEITURA HORTOLANDIA`).
+
+### **2. Instalar ferramentas**
+
+Atualmente inclui:
+
+-   **RED HAWK** (PHP)
+-   **GAMKERS DDOS** (Python2)
+-   **MaxPhisher** (Python, pipx)
+
+Cada ferramenta é baixada automaticamente com `git clone` e executada no
+diretório correto.
+
+------------------------------------------------------------------------
+
+## ⚙️ Requisitos Gerais
+
+-   Python 3\
+-   Git\
+-   PHP (para RED HAWK)\
+-   pipx (para MaxPhisher)\
+-   Permissão de rede para usar git
+
+No Termux:
+
+    pkg install python git php
+    pip install pipx
+    pipx ensurepath
+
+------------------------------------------------------------------------
+
+## 💻 Compatibilidade
+
+  Sistema                Suporte
+  ---------------------- -----------------------------------------------
+  **Kali Linux**         ✔ Total
+  **Linux comum**        ✔ Total
+  **Termux (Android)**   ✔ Total
+  **Windows**            ✔ Funciona (depende das ferramentas externas)
+  MacOS                  ⚠ Não testado
+
+------------------------------------------------------------------------
+
+## 📝 Notas importantes
+
+-   Cada ferramenta roda de forma isolada quando possível (via pipx).\
+-   Evita instalar dependências desnecessárias.\
+-   O projeto está em construção --- melhorias virão.
+
+------------------------------------------------------------------------
+
+## 🤝 Contribuição
+
+Pull requests são bem-vindos!\
+Só dá o fork, cria sua branch e mete o commit.
+
+------------------------------------------------------------------------
+
+## 🔥 Autor
+
+Criado por **biel**, o visionário do FAT MAN -- Olho de Deus.
+
+------------------------------------------------------------------------
+
+## 📜 Licença
+
+MIT --- pode usar, modificar e distribuir.
