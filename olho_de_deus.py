@@ -40,7 +40,7 @@ def atualizar_repo():
         print("Repositório não encontrado. Clonando...")
         subprocess.run([
             "git", "clone",
-            "https://github.com/gabrielbuso/Fat_Man-Olho_de_Deus.git",
+            "https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git",
             str(BASE_DIR)
         ])
 
@@ -52,7 +52,7 @@ def reiniciar():
     subprocess.run(["python3", str(Path(__file__))])
     exit()
 
-print("Olá meu filho. Diga, o que queres?")
+print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE)
 
 options = input("""
       [1] Informações de sites
@@ -178,6 +178,7 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
 
 
