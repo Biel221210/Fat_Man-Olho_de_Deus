@@ -5,7 +5,7 @@ from pathlib import Path
 import platform
 
 # SETA O VERDÃO AQUI
-# Cores estilo terminal hacker verdão
+
 VERDE = "\033[92m"
 VERDE_NEON = "\033[38;5;46m"
 RESET = "\033[0m"
@@ -178,6 +178,7 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
 
 
