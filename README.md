@@ -22,21 +22,25 @@ Este painel foi criado originalmente para Linux/Kali/Termux, mas
     https://windows.php.net/download/
 
 4.  Instale o `pipx` (opcional, mas recomendado)
-
+  
     Abra o terminal (CMD/PowerShell):
 
         python -m pip install pipx
         pipx ensurepath
 
-5.  Baixe o repositório do FAT_MAN:
+5.  Instale o **wsl** 
+    
+        wsl --install
+
+6.  Baixe o repositório do FAT_MAN:
 
         git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
 
-6.  Entre na pasta:
+7.  Entre na pasta:
 
         cd Fat_Man-Olho_de_Deus
 
-7.  Execute o painel:
+8.  Execute o painel:
 
         python olho_de_deus.py
 
