@@ -1,3 +1,4 @@
+import time
 import subprocess
 from pathlib import Path
 import shutil
@@ -95,6 +96,8 @@ Escolha: """)
         subprocess.run("maxphisher", shell=True)
     elif tool =='4':
         url3 = "https://github.com/htr-tech/track-ip.git"
+        print('Requer sudo, provalvelmente voce tera de por a senha do seu Pc')
+        time.sleep (1.5)
         subprocess.run('sudo apt install git curl -y', shell=True)
         subprocess.run(['git', 'clone', url3], cwd=base_dir)
         subprocess.run(
@@ -105,5 +108,6 @@ Escolha: """)
         exit()
     if options == '4':
         subprocess.run(['git', 'pull'], cwd=f"{base_dir}Fat_Man-Olho_de_Deus")
+
 
 
