@@ -2,10 +2,10 @@
 painel brazuca privado
 
 
-INSTALACAO
+# INSTALAÇÃO
 
 
-LINUX:
+# LINUX:
 
 sudo apt update && sudo apt upgrade -y
 
@@ -18,7 +18,7 @@ cd Fat_Man-Olho_de_Deus
 
 python3 olho_de_deus.py
 
-WINDOWS:
+# WINDOWS:
 
 wsl --install
 
