@@ -48,7 +48,7 @@ Este painel foi criado originalmente para Linux/Kali/Termux, mas
 
 ## 🐧 Instalação no Linux / Kali / Termux
 
-    git clone https://github.com/SEU_USUARIO/Fat_Man-Olho_de_Deus
+    git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
     cd Fat_Man-Olho_de_Deus
     python3 olho_de_deus.py
 
