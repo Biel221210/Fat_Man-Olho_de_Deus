@@ -37,7 +37,7 @@ Escolha uma opção: """)
       subprocess.run (['git', 'clone', url, destino])
       subprocess.run (
          ['php', 'rhawk.php'],
-         cwd='home/kali/fat_man/RED_HAWK'
+         cwd='RED_HAWK'
       )
    elif tool == '2':
       url2 = 'https://github.com/gamkers/GAMKERS-DDOS.git'
@@ -48,7 +48,7 @@ Escolha uma opção: """)
       subprocess.run ('apt install -y figlet', shell=True)
       subprocess.run (['git', 'clone', url2, destino2])
       subprocess.run(
-         ['python2', 'GAMKERS-DDOS.py'], cwd='/home/kali/fat_man/GAMKERS-DDOS'
+         ['python2', 'GAMKERS-DDOS.py'], cwd='GAMKERS-DDOS'
       )
    elif tool == '3':
        subprocess.run("apt install pipx", shell=True)
@@ -56,3 +56,4 @@ Escolha uma opção: """)
        subprocess.run("maxphisher", shell=True)
    elif tool == '4':
       exit()
+
