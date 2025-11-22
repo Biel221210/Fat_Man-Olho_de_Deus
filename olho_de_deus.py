@@ -55,6 +55,14 @@ Escolha: """)
         subprocess.run(['cat', 'INFO JUSBRASIL'])
     else:
         exit()
+    saida = input("""
+                [1] Continuar no painel
+                [2] Sair
+                Escolha: """)
+    if saida == '1':
+        subprocess.run(['python3', 'olho_de_deus.py'])
+    else:
+        exit()
 
 # ------------------------
 #  OPTION 2 — FERRAMENTAS
@@ -117,3 +125,4 @@ Escolha: """)
         subprocess.run(['python3', 'olho_de_deus.py'])
     else:
         exit()
+
