@@ -1,3 +1,5 @@
+import os
+import sys
 import time
 import subprocess
 from pathlib import Path
@@ -51,18 +53,28 @@ Escolha: """)
         subprocess.run(['cat', 'INFO SITE ETAPA'])
     elif info == '2':
         subprocess.run(['cat', 'INFO PREFEITURA HORTOLANDIA'])
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+if saida == '1':
+    subprocess.run(['python3', str(__file__)])
+else:
+    exit()
+    
     elif info == '3':
         subprocess.run(['cat', 'INFO JUSBRASIL'])
-    else:
-        exit()
-    saida = input("""
-                [1] Continuar no painel
-                [2] Sair
-                Escolha: """)
-    if saida == '1':
-        subprocess.run(['python3', 'olho_de_deus.py'])
-    else:
-        exit()
+   saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+if saida == '1':
+    subprocess.run(['python3', str(__file__)])
+else:
+    exit()
+
 
 # ------------------------
 #  OPTION 2 — FERRAMENTAS
@@ -82,6 +94,15 @@ Escolha: """)
         url = 'https://github.com/Tuhinshubhra/RED_HAWK'
         subprocess.run(["git", "clone", url], cwd=base_dir)
         subprocess.run(["php", "rhawk.php"], cwd=f"{base_dir}/RED_HAWK")
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+if saida == '1':
+    subprocess.run(['python3', str(__file__)])
+else:
+    exit()
 
     # GAMKERS DDOS
     elif tool == '2':
@@ -96,12 +117,31 @@ Escolha: """)
             ["python2", "GAMKERS-DDOS.py"],
             cwd=f"{base_dir}/GAMKERS-DDOS"
         )
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+if saida == '1':
+    subprocess.run(['python3', str(__file__)])
+else:
+    exit()
 
     # MAXPHISHER
     elif tool == '3':
         install_pkg("pipx")
         subprocess.run("pipx install maxphisher", shell=True)
         subprocess.run("maxphisher", shell=True)
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+if saida == '1':
+    subprocess.run(['python3', str(__file__)])
+else:
+    exit()
+
     elif tool =='4':
         url3 = "https://github.com/htr-tech/track-ip.git"
         print('Requer sudo, provalvelmente voce tera de por a senha do seu Pc')
@@ -112,17 +152,17 @@ Escolha: """)
             ['bash', 'trackip'],
             cwd=f"{base_dir}/track-ip"
         )
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+if saida == '1':
+    subprocess.run(['python3', str(__file__)])
+else:
+    exit()
+
     elif tool == '5':
         exit()
     if options == '4':
         subprocess.run(['git', 'pull'], cwd=f"{base_dir}Fat_Man-Olho_de_Deus")
-
-    saida = input("""
-                [1] Continuar no painel
-                [2] Sair
-                Escolha: """)
-    if saida == '1':
-        subprocess.run(['python3', 'olho_de_deus.py'])
-    else:
-        exit()
-
