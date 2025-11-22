@@ -95,4 +95,3 @@ Escolha: """)
     if options == '4':
         BASE_DIR = Path.home() / "Fat_Man-Olho_de_Deus"
         BASE_DIR.mkdir(exist_ok=True)
-        
