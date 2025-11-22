@@ -128,7 +128,7 @@ Escolha: """)
         subprocess.run("apt-get update -y && apt-get upgrade -y", shell=True)
         subprocess.run("apt-get install -y git python2", shell=True)
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
-        sunprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
+        subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
     
     elif tool == '6':
         reiniciar()
@@ -166,3 +166,4 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
