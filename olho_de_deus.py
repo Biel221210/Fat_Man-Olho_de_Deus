@@ -42,13 +42,16 @@ if options == '1':
     info = input("""
 [1] Etapa.com
 [2] Hortolândia.gov
-[3] Sair
+[3] JusBrasil
+[4] Sair
 Escolha: """)
     
     if info == '1':
         subprocess.run(['cat', 'INFO SITE ETAPA'])
     elif info == '2':
         subprocess.run(['cat', 'INFO PREFEITURA HORTOLANDIA'])
+    elif info == '3':
+        subprocess.run(['cat', 'INFO JUSBRASIL'])
     else:
         exit()
 
@@ -95,3 +98,4 @@ Escolha: """)
     if options == '4':
         BASE_DIR = Path.home() / "Fat_Man-Olho_de_Deus"
         BASE_DIR.mkdir(exist_ok=True)
+
