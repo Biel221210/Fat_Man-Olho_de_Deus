@@ -1,5 +1,3 @@
-import os
-import signal
 import subprocess
 subprocess.run (['clear'])
 subprocess.run (['cat', 'art_ascii'])
@@ -42,16 +40,17 @@ Escolha uma opção: """)
    elif tool == '2':
       url2 = 'https://github.com/gamkers/GAMKERS-DDOS.git'
       destino2 = '/home/kali/fat_man'
-      subprocess.run ('apt update && apt upgrade -y', shell=True)
-      subprocess.run ('apt install -y python2', shell=True)
-      subprocess.run ('apt install -y git', shell=True)
-      subprocess.run ('apt install -y figlet', shell=True)
+      subprocess.run ('sudo apt update && sudo apt upgrade -y', shell=True)
+      subprocess.run ('sudo apt install -y python2', shell=True)
+      subprocess.run ('sudo apt install -y git', shell=True)
+      subprocess.run ('sudo apt install -y figlet', shell=True)
       subprocess.run (['git', 'clone', url2, destino2])
       subprocess.run(
          ['python2', 'GAMKERS-DDOS.py'], cwd='/home/kali/fat_man/GAMKERS-DDOS'
       )
    elif tool == '3':
        subprocess.run("apt install pipx", shell=True)
+       subprocess.run("sudo apt install -y pipx", shell=True)
        subprocess.run("pipx install maxphisher", shell=True)
        subprocess.run("maxphisher", shell=True)
    elif tool == '4':
