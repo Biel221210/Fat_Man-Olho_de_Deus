@@ -30,7 +30,7 @@ Este painel foi criado originalmente para Linux/Kali/Termux, mas
 
 5.  Baixe o repositório do FAT_MAN:
 
-        git clone https://github.com/SEU_USUARIO/Fat_Man-Olho_de_Deus
+        git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
 
 6.  Entre na pasta:
 
@@ -55,7 +55,7 @@ Este painel foi criado originalmente para Linux/Kali/Termux, mas
 ### **1. Informações de sites**
 
 Mostra informações armazenadas em arquivos (`INFO SITE ETAPA`,
-`INFO PREFEITURA HORTOLANDIA`).
+`INFO PREFEITURA HORTOLANDIA`, `INFO JUSBRASIL`).
 
 ### **2. Instalar ferramentas**
 
@@ -64,6 +64,7 @@ Atualmente inclui:
 -   **RED HAWK** (PHP)
 -   **GAMKERS DDOS** (Python2)
 -   **MaxPhisher** (Python, pipx)
+-   **TrackIp** (Shell)
 
 Cada ferramenta é baixada automaticamente com `git clone` e executada no
 diretório correto.
@@ -76,6 +77,7 @@ diretório correto.
 -   Git\
 -   PHP (para RED HAWK)\
 -   pipx (para MaxPhisher)\
+-   Shell (para Track-Ip)\
 -   Permissão de rede para usar git
 
 No Termux:
@@ -118,7 +120,3 @@ Só dá o fork, cria sua branch e mete o commit.
 Criado por **biel**, o visionário do FAT MAN -- Olho de Deus.
 
 ------------------------------------------------------------------------
-
-## 📜 Licença
-
-MIT --- pode usar, modificar e distribuir.
