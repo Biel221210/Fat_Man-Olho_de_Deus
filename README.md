@@ -69,6 +69,7 @@ Atualmente inclui:
 -   **GAMKERS DDOS** (Python2)
 -   **MaxPhisher** (Python, pipx)
 -   **TrackIp** (Shell)
+-   **Clownters.py** (Python)
 
 Cada ferramenta é baixada automaticamente com `git clone` e executada no
 diretório correto.
