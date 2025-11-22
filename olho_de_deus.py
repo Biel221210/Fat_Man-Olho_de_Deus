@@ -64,7 +64,8 @@ if options == '2':
 [1] RED HAWK
 [2] GAMKERS DDOS
 [3] MaxPhisher
-[4] Sair
+[4] IP Tracker
+[5] Sair
 Escolha: """)
 
     # RED HAWK
@@ -92,9 +93,15 @@ Escolha: """)
         install_pkg("pipx")
         subprocess.run("pipx install maxphisher", shell=True)
         subprocess.run("maxphisher", shell=True)
-
-    elif tool == '4':
+    elif tool =='4':
+        url3 = git://github.com/htr-tech/track-ip.git
+        subprocess.run('apt install git curl -y', shell=True)
+        subprocess.run(['git', 'clone', url3], cwd=base_dir)
+        subprocess.run(
+            ['bash', 'trackip'],
+            cwd=f"{base_dir}/trackip"
+        )
+    elif tool == '5':
         exit()
     if options == '4':
         subprocess.run(['git', 'pull'], cwd=f"{base_dir}Fat_Man-Olho_de_Deus")
-    
