@@ -162,10 +162,11 @@ Escolha: """)
 # Sherlock
 
 if options == '3':
-    subprocess.run('pipx install sherlock-project --force', shell=True)
-    username = input(print("""
+    subprocess.run('pip install pipx', shell=True)
+    subprocess.run('pipx install sherlock-project', shell=True)
+    username = input("""
     Qual username você quer meu filho?
-    User: """))
+    User: """)
     subprocess.run(['sherlock', username])
 
 if options == '4':
@@ -185,6 +186,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
