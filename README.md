@@ -70,7 +70,7 @@ Atualmente inclui:
 -   **MaxPhisher** (Python, pipx)
 -   **TrackIp** (Shell)
 -   **Clownters.py** (Python)
--   **Sherlock** (Python, Dockerfile e Shell)
+-   **Registros do Céu (Sherlock)** (Python, Dockerfile e Shell)
 
 Cada ferramenta é baixada automaticamente com `git clone` e executada no
 diretório correto.
