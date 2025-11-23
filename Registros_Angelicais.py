@@ -4,6 +4,7 @@ import webbrowser
 import time
 import os
 import subprocess
+from pathlib import Path
 
 USER_AGENT = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0 Safari/537.36"
@@ -93,8 +94,14 @@ def abrir_busca():
         print("Abrindo no navegador...")
         webbrowser.open(url)
 
-continuar_painel = input("""
-    Deseja voltar ao Olho de Deus? y/N""")
-if continuar_painel == 'y' or 'Y':
-	subprocess.run(['python3', 'olho_de_deus.py'], cwd=BASE-DIR / "Fat_Man-Olho_de_Deus")
+def reiniciar():
+    subprocess.run(["python3", str(Path(__file__))])
+    exit()
 
+continuar_painel = input("""
+    Deseja voltar ao Olho de Deus? y/N
+	""")
+if continuar_painel == 'y' or 'Y':
+	reiniciar()
+else:
+	exit()
