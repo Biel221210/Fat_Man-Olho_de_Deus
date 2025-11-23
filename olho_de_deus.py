@@ -185,10 +185,7 @@ if options == '3':
     user = input("Qual username você quer meu filho?\n")
 
     # Executar sherlock.py (agora no caminho certo)
-    subprocess.run(
-        [sys.executable, 'sherlock', user],
-        cwd=BASE_DIR / 'sherlock'
-    )
+    subprocess.run(['sherlock', user])
 
 if options == '4':
     atualizar_repo()
@@ -207,6 +204,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
