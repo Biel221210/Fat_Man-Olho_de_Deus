@@ -4,7 +4,7 @@ import webbrowser
 import time
 import os
 import subprocess
-from pathlib import Path
+import sys
 
 USER_AGENT = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0 Safari/537.36"
@@ -94,14 +94,18 @@ def abrir_busca():
         print("Abrindo no navegador...")
         webbrowser.open(url)
 
-def reiniciar():
-    subprocess.run(["python3", str(Path(__file__))])
-    exit()
+def reabrir_olho_de_deus():
+    caminho = os.path.join(os.getcwd(), "olho_de_deus.py")
 
-continuar_painel = input("""
-    Deseja voltar ao Olho de Deus? y/N
-	""")
-if continuar_painel == 'y' or 'Y':
-	reiniciar()
-else:
-	exit()
+    if not os.path.exists(caminho):
+        print("\n[ERRO] O arquivo 'olho_de_Deus.py' não foi encontrado nesta pasta.")
+        print("Coloque ele na mesma pasta do painel e tente de novo.")
+        return
+
+    print("\nReabrindo o olho_de_deus.py...")
+    try:
+        subprocess.Popen(["python3", caminho])
+        sys.exit(0)  # Fecha o painel atual depois de abrir o script
+    except Exception as e:
+        print(f"[ERRO] Falha ao abrir olho_de_deus.py: {e}")
+
