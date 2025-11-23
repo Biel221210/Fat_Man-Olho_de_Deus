@@ -162,17 +162,12 @@ Escolha: """)
 
 # ==========================================
 # OPÇÃO 3 — PUXAR PELO SHERLOCK
-# ==========================================
-    
-    if options == '3':
-        subprocess.run(['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'], cwd=BASE_DIR)
-        subprocess.run('pipx install sherlock-project', shell=True)
-        user = input("""
-        Qual username você quer? Filho meu.""")
-        subprocess.run(['sherlock', user], cwd=BASE_DIR / 'sherlock-project',)
+# =========================================
+
+
 
 # ==========================================
-# OPÇÃO 3 — ATUALIZAR
+# OPÇÃO 4 — ATUALIZAR
 # ==========================================
 if options == '4':
     atualizar_repo()
@@ -191,6 +186,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
