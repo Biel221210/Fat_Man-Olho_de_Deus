@@ -159,16 +159,26 @@ Escolha: """)
         reiniciar()
     else:
         exit()
+if options == '3':
+    subprocess.run(
+        ['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'],
+        cwd=BASE_DIR
+    )
+    
+    subprocess.run(
+        ['pip', 'install', '-r', 'requirements.txt'],
+        cwd=BASE_DIR / 'sherlock'
+    )
+    
+    user = input("""
+    Qual username você quer? Filho meu.
+    """)
 
-# ==========================================
-# OPÇÃO 3 — PUXAR PELO SHERLOCK
-# =========================================
+    subprocess.run(
+        ['python3', 'sherlock.py', user],
+        cwd=BASE_DIR / 'sherlock/sherlock'
+    )
 
-
-
-# ==========================================
-# OPÇÃO 4 — ATUALIZAR
-# ==========================================
 if options == '4':
     atualizar_repo()
     saida = input("""
@@ -186,6 +196,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
