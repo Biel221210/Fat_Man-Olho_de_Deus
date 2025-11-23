@@ -160,15 +160,29 @@ Escolha: """)
         exit()
 
 # Sherlock
+if options == '3':
+    subprocess.run([sys.executable, "-m", "ensurepip", "--default-pip"])
+    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
 
-if options == '3': 
-    subprocess.run('pip install pipx', shell=True)
-    subprocess.run("pipx ensurepath", shell=True)
-    subprocess.run('pipx install sherlock-project', shell=True)
-    username = input("""
-    Qual username você quer meu filho?
-    User: """)
-    subprocess.run(['sherlock', username])
+    subprocess.run(
+        ['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'],
+        cwd=BASE_DIR
+    )
+
+    subprocess.run(
+        [sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'],
+        cwd=BASE_DIR / 'sherlock'
+    )
+
+    user = input("""
+    Qual username você quer? Filho meu.
+    """)
+
+    subprocess.run(
+        [sys.executable, 'sherlock.py', user],
+        cwd=BASE_DIR / 'sherlock/sherlock'
+    )
+
 
 if options == '4':
     atualizar_repo()
@@ -187,6 +201,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
