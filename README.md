@@ -35,6 +35,10 @@ Atualmente inclui:
 Cada ferramenta é baixada automaticamente com `git clone` e executada no
 diretório correto.
 
+### **3. Crecenciais do Céu**
+
+Puxa direto do JUsBrasil **AVISO** SE O NOME EM QUESTÃO NÃO ESTIVER CADASTRADO NO JUSBRASIL, O CODIGO RETORNARA ERRO.
+
 ------------------------------------------------------------------------
 
 ## ⚙️ Requisitos Gerais
