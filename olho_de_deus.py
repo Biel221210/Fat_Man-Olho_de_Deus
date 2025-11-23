@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+import sys
 import subprocess
 import os
 from pathlib import Path
@@ -197,6 +197,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
