@@ -95,9 +95,10 @@ def abrir_busca():
 
     time.sleep(2)
 
-    print("\nReabrindo o OLHO_DE_DEUS...")
+    print("\nReabrindo o Olho de Deus...")
     time.sleep(1)
-    subprocess.Popen(["python3", "OLHO_DE_DEUS.py"])
+    subprocess.Popen(["python3", "olho_de_deus.py"])
 
 # EXECUÇÃO DIRETA
 abrir_busca()
+
