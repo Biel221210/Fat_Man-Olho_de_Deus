@@ -1,3 +1,4 @@
+import sys
 import subprocess
 import os
 from pathlib import Path
@@ -161,27 +162,30 @@ Escolha: """)
 
 # Sherlock
 if options == '3':
-    subprocess.run([sys.executable, "-m", "ensurepip", "--default-pip"])
-    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+    import subprocess
+import sys
 
+if options == '3':
+    # Clonar o repositório oficial
     subprocess.run(
         ['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'],
         cwd=BASE_DIR
     )
 
+    # Instalar dependências DENTRO DO PROJETO (sem mexer no sistema)
     subprocess.run(
-        [sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'],
+        [sys.executable, '-m', 'pip', 'install', '--break-system-packages', '-r', 'requirements.txt'],
         cwd=BASE_DIR / 'sherlock'
     )
 
-    user = input("""
-    Qual username você quer? Filho meu.
-    """)
+    user = input("Qual username você quer meu filho?\n")
 
+    # Rodar o Sherlock direto do arquivo
     subprocess.run(
         [sys.executable, 'sherlock.py', user],
         cwd=BASE_DIR / 'sherlock/sherlock'
     )
+
 
 
 if options == '4':
@@ -201,6 +205,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
