@@ -93,10 +93,8 @@ def abrir_busca():
         print("Abrindo no navegador...")
         webbrowser.open(url)
 
- time.sleep(2)
+continuar_painel = input("""
+    Deseja voltar ao Olho de Deus? y/N""")
+if continuar_painel == 'y' or 'Y':
+	subprocess.run(['python3', 'olho_de_deus.py'], cwd=BASE-DIR / "Fat_Man-Olho_de_Deus")
 
-    print("\nReabrindo o olho de deus...")
-    time.sleep(1)
-    subprocess.Popen(["python3", "olho_de_deus.py"])
-
-abrir_busca()
