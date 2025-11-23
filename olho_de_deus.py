@@ -176,8 +176,8 @@ if options == '3':
     """)
 
     subprocess.run(
-        [sys.executable, 'sherlock.py', user],
-        cwd=BASE_DIR / 'sherlock/sherlock'
+        [sys.executable, 'sherlock', user],
+        cwd=BASE_DIR / 'sherlock-project'
     )
 
 if options == '4':
@@ -197,6 +197,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
