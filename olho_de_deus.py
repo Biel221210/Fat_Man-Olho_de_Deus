@@ -1,4 +1,3 @@
-import sys
 import subprocess
 import os
 from pathlib import Path
@@ -57,9 +56,8 @@ print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE_NEON)
 options = input("""
       [1] Informações de sites
       [2] Instalar ferramentas
-      [3] Registros do Céu
-      [4] Atualizar Painel
-      [5] Sair
+      [3] Atualizar Painel
+      [4] Sair
 Escolha: """)
 
 # ==========================================
@@ -109,9 +107,8 @@ if options == '2':
 [3] MaxPhisher
 [4] TrackIP
 [5] Clownters.py
-[6] Sherlock
-[7] Voltar ao painel
-[8] Sair
+[6] Voltar ao painel
+[7] Sair
 Escolha: """)
 
     # -------- RED HAWK --------
@@ -160,34 +157,7 @@ Escolha: """)
     else:
         exit()
 
-# Sherlock
 if options == '3':
-    import subprocess
-import sys
-
-if options == '3':
-    import subprocess
-import sys
-
-if options == '3':
-    # Clonar o repositório oficial
-    subprocess.run(
-        ['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'],
-        cwd=BASE_DIR
-    )
-
-    # Instalar dependências (com permissão pro Kali)
-    subprocess.run(
-        [sys.executable, '-m', 'pip', 'install', '--break-system-packages', '-r', 'requirements.txt'],
-        cwd=BASE_DIR / 'sherlock'
-    )
-
-    user = input("Qual username você quer meu filho?\n")
-
-    # Executar sherlock.py (agora no caminho certo)
-    subprocess.run(['sherlock', user])
-
-if options == '4':
     atualizar_repo()
     saida = input("""
 [1] Voltar ao painel
@@ -202,8 +172,9 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 4 — SAIR
 # ==========================================
-if options == '5':
+if options == '4':
     exit()
+
 
 
 
