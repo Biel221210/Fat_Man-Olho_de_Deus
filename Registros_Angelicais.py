@@ -93,12 +93,12 @@ def abrir_busca():
         print("Abrindo no navegador...")
         webbrowser.open(url)
 
-    time.sleep(2)
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
 
-    print("\nReabrindo o Olho de Deus...")
-    time.sleep(1)
-    subprocess.Popen(["python3", "olho_de_deus.py"])
-
-# EXECUÇÃO DIRETA
-abrir_busca()
-
+    if saida == '1':
+        reiniciar()
+    else:
+        exit()
