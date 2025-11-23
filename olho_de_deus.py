@@ -125,6 +125,7 @@ Escolha: """)
 
     # -------- MaxPhisher --------
     elif tool == '3':
+        subprocess.run("sudo apt install python3-pip", shell=True) 
         subprocess.run("pip install pipx", shell=True)
         subprocess.run("pipx ensurepath", shell=True)
         subprocess.run("pipx install maxphisher", shell=True)
@@ -162,6 +163,7 @@ Escolha: """)
 # Sherlock
 
 if options == '3':
+    subprocess.run("sudo apt install python3-pip", shell=True) 
     subprocess.run('pip install pipx', shell=True)
     subprocess.run("pipx ensurepath", shell=True)
     subprocess.run('pipx install sherlock-project', shell=True)
@@ -187,6 +189,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
