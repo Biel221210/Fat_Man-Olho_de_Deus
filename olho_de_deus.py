@@ -146,7 +146,7 @@ Escolha: """)
     # ------- Sherlock --------
     elif tool == '6':
         subprocess.run(['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'], cwd=BASE_DIR)
-        subprodess.run('pipx install sherlock-project', shell=True)
+        subprocess.run('pipx install sherlock-project', shell=True)
         user = input('Qual username você quer? Filho meu.')
         subprocess('sherlock', user, shell=True, cwd=BASE_DIR / 'sherlock-project')
     
@@ -186,6 +186,7 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
 
 
