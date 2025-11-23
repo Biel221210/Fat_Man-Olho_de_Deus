@@ -160,7 +160,7 @@ Escolha: """)
 
 # ---------Credeciais do ceu-----------
 if options == '3':
-    subprocess.run(['python3', 'Registros_Angelicais.py'])
+    subprocess.run(['python3', 'Registros_Angelicais.py'], cwd=BASE_DIR / 'Fat_Man-Olho_de_Deus')
 
 if options == '4':
     atualizar_repo()
@@ -179,6 +179,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
