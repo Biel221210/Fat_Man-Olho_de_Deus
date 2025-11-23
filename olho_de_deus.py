@@ -160,22 +160,23 @@ Escolha: """)
     else:
         exit()
 if options == '3':
+    subprocess.run([sys.executable, "-m", "ensurepip", "--default-pip"])
+    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
     subprocess.run(
         ['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'],
         cwd=BASE_DIR
     )
-    
     subprocess.run(
-        ['pip', 'install', '-r', 'requirements.txt'],
+        [sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'],
         cwd=BASE_DIR / 'sherlock'
     )
-    
+
     user = input("""
     Qual username você quer? Filho meu.
     """)
 
     subprocess.run(
-        ['python3', 'sherlock.py', user],
+        [sys.executable, 'sherlock.py', user],
         cwd=BASE_DIR / 'sherlock/sherlock'
     )
 
@@ -196,6 +197,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
