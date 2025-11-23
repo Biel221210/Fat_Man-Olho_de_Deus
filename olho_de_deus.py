@@ -52,13 +52,14 @@ def reiniciar():
     subprocess.run(["python3", str(Path(__file__))])
     exit()
 
-print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE)
+print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE_NEON)
 
 options = input("""
       [1] Informações de sites
       [2] Instalar ferramentas
-      [3] Atualizar Painel
-      [4] Sair
+      [3] Registros do Céu
+      [4] Atualizar Painel
+      [5] Sair
 Escolha: """)
 
 # ==========================================
@@ -143,18 +144,10 @@ Escolha: """)
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
         subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
     
-    # ------- Sherlock --------
     elif tool == '6':
-        subprocess.run(['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'], cwd=BASE_DIR)
-        subprocess.run('pipx install sherlock-project', shell=True)
-        user = input("""
-        Qual username você quer? Filho meu.""")
-        subprocess.run(['sherlock', user], cwd=BASE_DIR / 'sherlock-project',)
-    
-    elif tool == '7':
         reiniciar()
 
-    elif tool == '8':
+    elif tool == '7':
         exit()
 
     saida = input("""
@@ -168,9 +161,20 @@ Escolha: """)
         exit()
 
 # ==========================================
+# OPÇÃO 3 — PUXAR PELO SHERLOCK
+# ==========================================
+    
+    if options == '3':
+        subprocess.run(['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'], cwd=BASE_DIR)
+        subprocess.run('pipx install sherlock-project', shell=True)
+        user = input("""
+        Qual username você quer? Filho meu.""")
+        subprocess.run(['sherlock', user], cwd=BASE_DIR / 'sherlock-project',)
+
+# ==========================================
 # OPÇÃO 3 — ATUALIZAR
 # ==========================================
-if options == '3':
+if options == '4':
     atualizar_repo()
     saida = input("""
 [1] Voltar ao painel
@@ -185,8 +189,9 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 4 — SAIR
 # ==========================================
-if options == '4':
+if options == '5':
     exit()
+
 
 
 
