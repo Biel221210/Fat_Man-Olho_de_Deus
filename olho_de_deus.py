@@ -124,8 +124,7 @@ Escolha: """)
         subprocess.run(["python2", "GAMKERS-DDOS.py"], cwd=BASE_DIR / "GAMKERS-DDOS")
 
     # -------- MaxPhisher --------
-    elif tool == '3':
-        subprocess.run("sudo apt install pip", shell=True) 
+    elif tool == '3': 
         subprocess.run("pip install pipx", shell=True)
         subprocess.run("pipx ensurepath", shell=True)
         subprocess.run("pipx install maxphisher", shell=True)
@@ -162,8 +161,7 @@ Escolha: """)
 
 # Sherlock
 
-if options == '3':
-    subprocess.run("sudo apt install pip", shell=True) 
+if options == '3': 
     subprocess.run('pip install pipx', shell=True)
     subprocess.run("pipx ensurepath", shell=True)
     subprocess.run('pipx install sherlock-project', shell=True)
@@ -189,6 +187,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
