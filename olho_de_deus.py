@@ -56,8 +56,9 @@ print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE_NEON)
 options = input("""
       [1] Informações de sites
       [2] Instalar ferramentas
-      [3] Atualizar Painel
-      [4] Sair
+      [3] Credenciais do céu
+      [4] Atualizar Painel
+      [5] Sair
 Escolha: """)
 
 # ==========================================
@@ -157,7 +158,11 @@ Escolha: """)
     else:
         exit()
 
+# ---------Credeciais do ceu-----------
 if options == '3':
+    subprocess.run(['python3', 'Registros_Angelicais.py'])
+
+if options == '4':
     atualizar_repo()
     saida = input("""
 [1] Voltar ao painel
@@ -172,8 +177,9 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 4 — SAIR
 # ==========================================
-if options == '4':
+if options == '5':
     exit()
+
 
 
 
