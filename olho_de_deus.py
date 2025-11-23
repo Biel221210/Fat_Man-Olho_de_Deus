@@ -163,6 +163,7 @@ Escolha: """)
 
 if options == '3':
     subprocess.run('pip install pipx', shell=True)
+    subprocess.run("pipx ensurepath", shell=True)
     subprocess.run('pipx install sherlock-project', shell=True)
     username = input("""
     Qual username você quer meu filho?
@@ -186,6 +187,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
