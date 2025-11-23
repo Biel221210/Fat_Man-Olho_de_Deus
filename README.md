@@ -5,45 +5,6 @@ facilitar acesso a ferramentas, executar utilidades e automatizar
 tarefas como clonagem de repositórios, rodar scripts, consultar
 informações e instalar ferramentas externas.
 
-Este painel foi criado originalmente para Linux/Kali/Termux, mas
-**funciona no Windows** com algumas adaptações.
-
-------------------------------------------------------------------------
-
-## 🚀 Instalação no Windows
-
-1.  Instale o **Python 3**\
-    https://www.python.org/downloads/
-
-2.  Instale o **Git**\
-    https://git-scm.com/download/win
-
-3.  Instale o **PHP** (necessário para rodar o RED HAWK)\
-    https://windows.php.net/download/
-
-4.  Instale o `pipx` (opcional, mas recomendado)
-  
-    Abra o terminal (CMD/PowerShell):
-
-        python -m pip install pipx
-        pipx ensurepath
-
-5.  Instale o **wsl** 
-    
-        wsl --install
-
-6.  Baixe o repositório do FAT_MAN:
-
-        git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
-
-7.  Entre na pasta:
-
-        cd Fat_Man-Olho_de_Deus
-
-8.  Execute o painel:
-
-        python olho_de_deus.py
-
 ------------------------------------------------------------------------
 
 ## 🐧 Instalação no Linux / Kali / Termux
@@ -101,8 +62,6 @@ No Termux:
   **Kali Linux**         ✔ Total
   **Linux comum**        ✔ Total
   **Termux (Android)**   ✔ Total
-  **Windows**            ✔ Funciona (depende das ferramentas externas)
-  MacOS                  ⚠ Não testado
 
 ------------------------------------------------------------------------
 
