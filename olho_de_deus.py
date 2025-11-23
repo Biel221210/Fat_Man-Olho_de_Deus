@@ -108,8 +108,9 @@ if options == '2':
 [3] MaxPhisher
 [4] TrackIP
 [5] Clownters.py
-[6] Voltar ao painel
-[7] Sair
+[6] Sherlock
+[7] Voltar ao painel
+[8] Sair
 Escolha: """)
 
     # -------- RED HAWK --------
@@ -142,10 +143,17 @@ Escolha: """)
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
         subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
     
+    # ------- Sherlock --------
     elif tool == '6':
+        subprocess.run(['git', 'clone', 'https://github.com/sherlock-project/sherlock.git'], cwd=BASE_DIR)
+        subprodess.run('pipx install sherlock-project', shell=True)
+        user = input('Qual username você quer? Filho meu.')
+        subprocess('sherlock', user, shell=True, cwd=BASE_DIR / 'sherlock-project')
+    
+    elif tool == '7':
         reiniciar()
 
-    elif tool == '7':
+    elif tool == '8':
         exit()
 
     saida = input("""
@@ -178,6 +186,7 @@ Escolha: """)
 # ==========================================
 if options == '4':
     exit()
+
 
 
 
