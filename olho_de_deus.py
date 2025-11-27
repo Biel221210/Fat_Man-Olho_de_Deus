@@ -156,22 +156,7 @@ Escolha: """)
     if saida == '1':
         reiniciar()
     else:
-        exit()
-
-if options == '3':
-    input('Oque você deseja scanear, filho meu?')
-    ip/site = ("""
-[1] Ip
-[2] Site
-Escolha: """)
-    elif ip/site == '1':
-
-if options == '4':
-    atualizar_repo()
-    saida = input("""
-[1] Voltar ao painel
-[2] Sair
-Escolha: """)
+        exit()
 
     if saida == '1':
         reiniciar()
