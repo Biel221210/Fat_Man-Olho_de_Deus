@@ -56,7 +56,7 @@ print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE_NEON)
 options = input("""
       [1] Informações de sites
       [2] Instalar ferramentas
-     [3] Scan divino (fazendo...)
+      [3] Scan divino
       [4] Atualizar Painel
       [5] Sair
 Escolha: """)
@@ -156,10 +156,40 @@ Escolha: """)
     if saida == '1':
         reiniciar()
     else:
-        exit()
-
-    if saida == '1':
-        reiniciar()
+        exit()
+    
+    if options == '3':
+        subprocess.run('sudo apt install nmap', shell=True)
+        Ip_ou_site = input("""
+O que desejas scanear, filho meu?
+[1] Ip (Agressivo)
+[2] Ip (Stealth)
+[3] Scan de Vulnerabilidades (site, no caso)
+[4] Site (no seco, só)
+[5] sair
+Escolha: """)
+    if Ip_ou_site == '1':
+        Ip = input('Qual Ip deseja scanear?')
+        subprocess.run(['nmap', '-A', Ip])
+    elif Ip_ou_site == '2':
+        Ip = input('Qual Ip deseja scanear?')
+        subprocess.run(['nmap', '-sS', Ip])
+    elif Ip_ou_site == '3':
+        site = input('Qual site você deseja scanear?)
+        subprocess.run(['nmap', '--script', 'vuln', site])
+    elif Ip_ou_site == '3':
+        site = input('Qual site você deseja scanear?')
+        subprocess.run(['nmap', site])
+    elif options == '5':
+        exit()
+        
+    if options == '4':
+        Atualizar = input("""
+[1] Atualizar o painel
+[2] Sair
+Escolha: """)
+    if Atualizar == '1':
+        subprocess.run(['git', 'pull'])
     else:
         exit()
 
@@ -168,6 +198,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
