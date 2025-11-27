@@ -175,7 +175,7 @@ Escolha: """)
         Ip = input('Qual Ip deseja scanear?')
         subprocess.run(['nmap', '-sS', Ip])
     elif Ip_ou_site == '3':
-        site = input('Qual site você deseja scanear?)
+        site = input('Qual site você deseja scanear?')
         subprocess.run(['nmap', '--script', 'vuln', site])
     elif Ip_ou_site == '3':
         site = input('Qual site você deseja scanear?')
@@ -198,6 +198,7 @@ Escolha: """)
 # ==========================================
 if options == '5':
     exit()
+
 
 
 
