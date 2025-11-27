@@ -55,9 +55,10 @@ print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + VERDE_NEON)
 
 options = input("""
       [1] Informações de sites
-      [2] Instalar ferramentas
-      [3] Atualizar Painel
-      [4] Sair
+      [2] Instalar ferramentas
+     [3] Scan divino (fazendo...)
+      [4] Atualizar Painel
+      [5] Sair
 Escolha: """)
 
 # ==========================================
@@ -156,9 +157,16 @@ Escolha: """)
         reiniciar()
     else:
         exit()
-
 
 if options == '3':
+    input('Oque você deseja scanear, filho meu?')
+    ip/site = ("""
+[1] Ip
+[2] Site
+Escolha: """)
+    elif ip/site == '1':
+
+if options == '4':
     atualizar_repo()
     saida = input("""
 [1] Voltar ao painel
@@ -171,9 +179,9 @@ Escolha: """)
         exit()
 
 # ==========================================
-# OPÇÃO 4 — SAIR
+# OPÇÃO 5 — SAIR
 # ==========================================
-if options == '4':
+if options == '5':
     exit()
 
 
