@@ -1,6 +1,7 @@
 import subprocess
 import os
 from pathlib import Path
+import shutil
 
 # SETA O VERDÃO AQUI
 VERDE = "\033[92m"
@@ -9,7 +10,7 @@ RESET = "\033[0m"
 
 print("\033[0;32m")
 
-# Limpa a tela e mostra ASCII inicial (se existir)
+# Tenta exibir ASCII inicial
 subprocess.run(['clear'])
 subprocess.run(['cat', 'art_ascii'], stderr=subprocess.DEVNULL)
 
@@ -22,13 +23,50 @@ BASE_DIR.mkdir(exist_ok=True)
 # Limpa tela
 subprocess.run(["clear"])
 
-# Mostra ASCII se existir na pasta principal
+# Mostra ASCII salvo na pasta
 ascii_path = BASE_DIR / "art_ascii"
 if ascii_path.exists():
     subprocess.run(["cat", str(ascii_path)])
 
 # ==========================================
-# FUNÇÃO DE ATUALIZAÇÃO DO PAINEL
+# INSTALAÇÃO UNIVERSAL DE PACOTES
+# ==========================================
+def instalar_pacote(pacote):
+    # Termux (pkg)
+    if shutil.which("pkg"):
+        print(f"Instalando {pacote} via pkg...")
+        subprocess.run(["pkg", "install", "-y", pacote])
+        return
+
+    # apt (Ubuntu, Debian, Kali etc)
+    if shutil.which("apt"):
+        print(f"Instalando {pacote} via apt...")
+        subprocess.run(["sudo", "apt", "update", "-y"])
+        subprocess.run(["sudo", "apt", "install", "-y", pacote])
+        return
+
+    # pacman (Arch, Manjaro)
+    if shutil.which("pacman"):
+        print(f"Instalando {pacote} via pacman...")
+        subprocess.run(["sudo", "pacman", "-Sy", pacote, "--noconfirm"])
+        return
+
+    # dnf (Fedora)
+    if shutil.which("dnf"):
+        print(f"Instalando {pacote} via dnf...")
+        subprocess.run(["sudo", "dnf", "install", "-y", pacote])
+        return
+
+    # yum (CentOS)
+    if shutil.which("yum"):
+        print(f"Instalando {pacote} via yum...")
+        subprocess.run(["sudo", "yum", "install", "-y", pacote])
+        return
+
+    print(f"Não foi possível instalar o pacote {pacote}. Instale manualmente.")
+
+# ==========================================
+# ATUALIZAR O REPOSITÓRIO DO PAINEL
 # ==========================================
 def atualizar_repo():
     if (BASE_DIR / ".git").exists():
@@ -43,12 +81,15 @@ def atualizar_repo():
         ])
 
 # ==========================================
-# FUNÇÃO PARA REINICIAR O PAINEL
+# FUNÇÃO DE REINICIAR O PAINEL
 # ==========================================
 def reiniciar():
     subprocess.run(["python3", str(Path(__file__))])
     exit()
 
+# ==========================================
+# TELA PRINCIPAL
+# ==========================================
 print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + RESET)
 
 options = input("""
@@ -100,6 +141,7 @@ Escolha: """)
 # OPÇÃO 2 — FERRAMENTAS
 # ==========================================
 elif options == '2':
+
     tool = input("""
 [1] RED HAWK
 [2] GAMKERS DDOS
@@ -110,28 +152,35 @@ elif options == '2':
 [7] Sair
 Escolha: """)
 
+    # RED HAWK
     if tool == '1':
         subprocess.run(["git", "clone", "https://github.com/Tuhinshubhra/RED_HAWK"], cwd=BASE_DIR)
         subprocess.run(["php", "rhawk.php"], cwd=BASE_DIR / "RED_HAWK")
 
+    # Gamkers DDOS
     elif tool == '2':
+        instalar_pacote("python2")
         subprocess.run(["git", "clone", "https://github.com/gamkers/GAMKERS-DDOS.git"], cwd=BASE_DIR)
         subprocess.run(["python2", "GAMKERS-DDOS.py"], cwd=BASE_DIR / "GAMKERS-DDOS")
 
+    # MaxPhisher
     elif tool == '3':
         subprocess.run("pip install pipx", shell=True)
         subprocess.run("pipx ensurepath", shell=True)
         subprocess.run("pipx install maxphisher", shell=True)
         subprocess.run("maxphisher", shell=True)
 
+    # Track IP
     elif tool == '4':
-        subprocess.run("apt install git curl -y", shell=True)
-        subprocess.run(["git", "clone", 'https://github.com/htr-tech/track-ip.git'], cwd=BASE_DIR)
-        subprocess.run(["bash", "trackip"], cwd=BASE_DIR / 'track-ip')
+        instalar_pacote("git")
+        instalar_pacote("curl")
+        subprocess.run(["git", "clone", "https://github.com/htr-tech/track-ip.git"], cwd=BASE_DIR)
+        subprocess.run(["bash", "trackip"], cwd=BASE_DIR / "track-ip")
 
+    # Clownters
     elif tool == '5':
-        subprocess.run("apt-get update -y && apt-get upgrade -y", shell=True)
-        subprocess.run("apt-get install -y git python2", shell=True)
+        instalar_pacote("git")
+        instalar_pacote("python2")
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
         subprocess.run(['bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
 
@@ -155,7 +204,8 @@ Escolha: """)
 # OPÇÃO 3 — SCAN DIVINO (NMAP)
 # ==========================================
 elif options == '3':
-    subprocess.run('sudo apt install nmap -y', shell=True)
+
+    instalar_pacote("nmap")
 
     escolha = input("""
 O que desejas scanear, filho meu?
