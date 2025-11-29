@@ -144,7 +144,7 @@ elif options == '2':
 
     tool = input("""
 [1] RED HAWK
-[2] DDOS RIPPER
+[2] GAMKERS DDOS
 [3] MaxPhisher
 [4] TrackIP
 [5] Clownters.py
@@ -159,9 +159,9 @@ Escolha: """)
 
     # Gamkers DDOS
     elif tool == '2':
-        instalar_pacote("python3")
-        subprocess.run(["git", "clone", "https://github.com/palahsu/DDoS-Ripper.git"], cwd=BASE_DIR)
-        subprocess.run(["python3", "DRipper.py"], cwd=BASE_DIR / "DDoS-Ripper")
+        instalar_pacote("python2")
+        subprocess.run(["git", "clone", "https://github.com/gamkers/GAMKERS-DDOS.git"], cwd=BASE_DIR)
+        subprocess.run(["python2", "GAMKERS-DDOS.py"], cwd=BASE_DIR / "GAMKERS-DDOS")
 
     # MaxPhisher
     elif tool == '3':
@@ -266,5 +266,6 @@ Escolha: """)
 # ==========================================
 elif options == '5':
     exit()
+
 
 
