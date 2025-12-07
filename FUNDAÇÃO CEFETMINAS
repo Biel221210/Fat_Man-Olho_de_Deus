@@ -1,0 +1,293 @@
+B A S I C   I N F O                                                                                                                                                                                                                        
+====================                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+[+] Site Title: Fundação CEFETMINAS                                                                                                                                                                                                        
+[+] IP address: 167.86.116.204                                                                                                                                                                                                             
+[+] Web Server: Apache                                                                                                                                                                                                                     
+[+] CMS: WordPress                                                                                                                                                                                                                         
+[+] Cloudflare: Not Detected                                                                                                                                                                                                               
+[+] Robots File: Found                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+-------------[ contents ]----------------                                                                                                                                                                                                  
+User-agent: *                                                                                                                                                                                                                              
+Disallow: /wp-admin/                                                                                                                                                                                                                       
+Allow: /wp-admin/admin-ajax.php                                                                                                                                                                                                            
+                                                                                                                                                                                                                                           
+Sitemap: https://fundacaocefetminas.org.br/wp-sitemap.xml                                                                                                                                                                                  
+                                                                                                                                                                                                                                           
+-----------[end of contents]-------------                                                                                                                                                                                                  
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+W H O I S   L O O K U P                                                                                                                                                                                                                    
+========================                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                           
+        error valid key required                                                                                                                                                                                                           
+
+
+
+G E O  I P  L O O K  U P
+=========================                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                           
+[i] IP: 167.86.116.204                                                                                                                                                                                                                     
+[i] Country: France 
+[i] State: Bas-Rhin 
+[i] City: Lauterbourg 
+[i] Latitude: 48.9742 
+[i] Longitude: 8.1851 
+
+
+
+
+H T T P   H E A D E R S
+=======================                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+[i]  HTTP/1.1 200 OK
+[i]  Date: Sun, 07 Dec 2025 21:45:43 GMT
+[i]  Server: Apache
+[i]  Link: <https://fundacaocefetminas.org.br/wp-json/>; rel="https://api.w.org/"
+[i]  Vary: Accept-Encoding,User-Agent
+[i]  Connection: close
+[i]  Transfer-Encoding: chunked
+[i]  Content-Type: text/html; charset=UTF-8
+
+
+
+
+D N S   L O O K U P
+===================                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                           
+A : 167.86.116.204                                                                                                                                                                                                                         
+MX : 5 alt2.aspmx.l.google.com.
+MX : 1 aspmx.l.google.com.
+MX : 10 alt4.aspmx.l.google.com.
+MX : 5 alt1.aspmx.l.google.com.
+MX : 10 alt3.aspmx.l.google.com.
+NS : ns9.citis.com.br.
+NS : ns3.citis.com.br.
+NS : ns3.contabo.net.
+TXT : v=spf1 ip4:167.86.116.204 +a +mx +ip4:167.86.91.138 +include:_spf.google.com ~all
+TXT : MS=23FFFA49C7077EDDE180108278937B49B43FECB4
+TXT : MS=ms67118029
+SOA : ns3.citis.com.br. robot.citis.com.br. 2025111900 3600 1800 1209600 86400
+
+
+
+S U B N E T   C A L C U L A T I O N
+====================================                                                                                                                                                                                                       
+                                                                                                                                                                                                                                           
+Address       = 167.86.116.204                                                                                                                                                                                                             
+Network       = 167.86.116.204/32
+Netmask       = 255.255.255.255
+Broadcast     = 167.86.116.204
+Wildcard Mask = 0.0.0.0
+Hosts Bits    = 0
+Max. Hosts    = 1
+Host Range    = 167.86.116.205 - 167.86.116.203
+IP Class      = B
+CIDR Notation = 167.86.116.204/32
+IP Version    = IPv4
+Is Private    = No
+DNS Hostname  = comlinux3.citis.com.br
+
+
+
+N M A P   P O R T   S C A N
+============================                                                                                                                                                                                                               
+                                                                                                                                                                                                                                           
+error valid key required                                                                                                                                                                                                                   
+
+
+S U B - D O M A I N   F I N D E R
+==================================                                                                                                                                                                                                         
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+[i] Total Subdomains Found : 32                                                                                                                                                                                                            
+                                                                                                                                                                                                                                           
+[+] Subdomain: alumni.fundacaocefetminas.org.br                                                                                                                                                                                            
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: api.fundacaocefetminas.org.br                                                                                                                                                                                               
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: app.fundacaocefetminas.org.br                                                                                                                                                                                               
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: ava.fundacaocefetminas.org.br                                                                                                                                                                                               
+[-] IP: 162.241.61.194                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: bi.fundacaocefetminas.org.br                                                                                                                                                                                                
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso.fundacaocefetminas.org.br                                                                                                                                                                                          
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: www.concurso.fundacaocefetminas.org.br                                                                                                                                                                                      
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso1.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso10.fundacaocefetminas.org.br                                                                                                                                                                                        
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso2.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso3.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso4.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso5.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso6.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso7.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso8.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: concurso9.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: conveniar.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: cpcalendars.fundacaocefetminas.org.br                                                                                                                                                                                       
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: cpcontacts.fundacaocefetminas.org.br                                                                                                                                                                                        
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: cursos.fundacaocefetminas.org.br                                                                                                                                                                                            
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: documentos.fundacaocefetminas.org.br                                                                                                                                                                                        
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: estagios.fundacaocefetminas.org.br                                                                                                                                                                                          
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: fcmevolua.fundacaocefetminas.org.br                                                                                                                                                                                         
+[-] IP: 191.252.156.120                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                           
+[+] Subdomain: iaeste.fundacaocefetminas.org.br                                                                                                                                                                                            
+[-] IP: 20.119.32.165                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: ns.fundacaocefetminas.org.br                                                                                                                                                                                                
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: prova.fundacaocefetminas.org.br                                                                                                                                                                                             
+[-] IP: 134.122.7.131                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: ts.fundacaocefetminas.org.br                                                                                                                                                                                                
+[-] IP: 52.226.34.215                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                           
+[+] Subdomain: webdisk.fundacaocefetminas.org.br                                                                                                                                                                                           
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: webmail.fundacaocefetminas.org.br                                                                                                                                                                                           
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: wikifcm.fundacaocefetminas.org.br                                                                                                                                                                                           
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+[+] Subdomain: www.wikifcm.fundacaocefetminas.org.br                                                                                                                                                                                       
+[-] IP: 167.86.116.204                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+
+
+
+R E V E R S E   I P   L O O K U P
+==================================                                                                                                                                                                                                         
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+[i] Total Sites Found On This Server : 0                                                                                                                                                                                                   
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+
+
+
+S Q L   V U L N E R A B I L I T Y   S C A N N E R
+===================================================                                                                                                                                                                                        
+
+ [#] https://portal.sponteeducacional.net.br/RematriculaWeb.aspx?cid=fcmidiomas
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                                                  
+                                                                                                                                                                                                                                           
+
+ [#] https://portal.sponteeducacional.net.br/RematriculaWeb.aspx?cid=fcmidiomas
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                                                  
+                                                                                                                                                                                                                                           
+
+
+ [+] URL(s) With Parameter(s):2
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+C R A W L E R                                                                                                                                                                                                                              
+=============                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+Crawling Types & Descriptions:                                                                                                                                                                                                             
+
+69: This is the lite version of tge crawler, This will show you the files which returns the http code '200'. This is time efficient and less messy.
+
+420: This is a little advance one it will show you all the list of files with their http code other then the badboy 404. This is a little messier but informative 
+
+Select Crawler Type (69/420): 420
+
+         -[ A D V A N C E   C R A W L I N G ]-
+
+
+
+ Loading Crawler File ....
+
+[-] Admin Crawler File Found! Scanning For Admin Pannel [-]
+
+URLs Loaded: 817
+
+
+
+[U] https://fundacaocefetminas.org.br/admin/ : HTTP Response: 302
+
+[U] https://fundacaocefetminas.org.br/admin/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/siteadmin/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/admin_area/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/bb-admin/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/administrator/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/login.php : HTTP Response: 302
+
+[U] https://fundacaocefetminas.org.br/webadmin/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/wp-login.php : Found!
+
+[U] https://fundacaocefetminas.org.br/adminarea/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/panel-administracion/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/modelsearch/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/admin2/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/adm/index.php : HTTP Response: 301
+
+[U] https://fundacaocefetminas.org.br/admin/ : HTTP Response: 302
+
+[U] https://fundacaocefetminas.org.br/admin/ : HTTP Response: 302
+
+[U] https://fundacaocefetminas.org.br/admin/ : HTTP Response: 302
+
+[U] https://fundacaocefetminas.org.br/admin/ : HTTP Response: 302
