@@ -109,8 +109,9 @@ if options == '1':
 [1] Etapa.com
 [2] Hortolândia.gov
 [3] JusBrasil
-[4] Voltar ao painel
-[5] Sair
+[4] Fundação CefetMinas
+[5] Voltar ao painel
+[6] Sair
 Escolha: """)
 
     if info == '1':
@@ -122,10 +123,13 @@ Escolha: """)
     elif info == '3':
         subprocess.run(["cat", str(BASE_DIR / "INFO JUSBRASIL")])
 
-    elif info == '4':
-        reiniciar()
+    elif inf == '4':
+        subprocess.run(["cat", str(BASE_DIR / "FUNDAÇÃO CEFETMINAS")])
 
     elif info == '5':
+        reiniciar()
+
+    elif info == '6':
         exit()
 
     saida = input("""
@@ -273,6 +277,7 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
 
 
 
