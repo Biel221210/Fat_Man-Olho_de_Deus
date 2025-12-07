@@ -123,7 +123,7 @@ Escolha: """)
     elif info == '3':
         subprocess.run(["cat", str(BASE_DIR / "INFO JUSBRASIL")])
 
-    elif inf == '4':
+    elif info == '4':
         subprocess.run(["cat", str(BASE_DIR / "FUNDAÇÃO CEFETMINAS")])
 
     elif info == '5':
@@ -277,6 +277,7 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
 
 
 
