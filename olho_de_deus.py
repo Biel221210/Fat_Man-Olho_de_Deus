@@ -96,9 +96,8 @@ options = input("""
       [1] Informações de sites
       [2] Instalar ferramentas
       [3] Scan divino
-      [4] Credenciais divinas
-      [5] Atualizar Painel
-      [6] Sair
+      [4] Atualizar Painel
+      [5] Sair
 Escolha: """)
 
 # ==========================================
@@ -206,15 +205,9 @@ Escolha: """)
         exit()
 
 # ==========================================
-# OPÇÃO 4 — OSINT DOS DEUSES (NMAP)
-# ==========================================
-elif options == '4':
-    subprocess.run(['python3', 'Registros_Angelicais.py'])
-
-# ==========================================
 # OPÇÃO 5 — SCAN DIVINO (NMAP)
 # ==========================================
-elif options == '5':
+elif options == '3':
 
     instalar_pacote("nmap")
 
@@ -260,7 +253,7 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 4 — ATUALIZAR PAINEL
 # ==========================================
-elif options == '6':
+elif options == '5':
     atualizar = input("""
 [1] Atualizar o painel
 [2] Sair
@@ -275,8 +268,9 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 5 — SAIR
 # ==========================================
-elif options == '7':
+elif options == '6':
     exit()
+
 
 
 
