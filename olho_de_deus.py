@@ -256,6 +256,7 @@ Escolha: """)
 # =========================================
 elif options == '4':
     subprocess.run(['python3', 'gerador de pessoas.py'])
+    subprocess.run(['python3', 'gerador de cpf.py'])
 
 # ==========================================
 # OPÇÃO 5 — ATUALIZAR PAINEL
@@ -277,6 +278,7 @@ Escolha: """)
 # ==========================================
 elif options == '6':
     exit()
+
 
 
 
