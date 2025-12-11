@@ -255,7 +255,7 @@ Escolha: """)
 # OPÇÃO 4 - GERADOR DE PESSOAS
 # =========================================
 elif options == '4':
-    subprocess.run(['python3', 'gerador de pessoas.py'] cwd=BASE_DIR / 'Fat_Man-Olho_de_Deus')
+    subprocess.run(['python3', 'gerador de pessoas.py'], cwd=BASE_DIR / 'Fat_Man-Olho_de_Deus')
 
 # ==========================================
 # OPÇÃO 5 — ATUALIZAR PAINEL
@@ -277,6 +277,7 @@ Escolha: """)
 # ==========================================
 elif options == '6':
     exit()
+
 
 
 
