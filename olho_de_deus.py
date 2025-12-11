@@ -96,8 +96,9 @@ options = input("""
       [1] Informações de sites
       [2] Instalar ferramentas
       [3] Scan divino
-      [4] Atualizar Painel
-      [5] Sair
+      [4] Gerador de Pessoas
+      [5] Atualizar Painel
+      [6] Sair
 Escolha: """)
 
 # ==========================================
@@ -250,8 +251,14 @@ Escolha: """)
     else:
         exit()
 
+# =========================================
+# OPÇÃO 4 - GERADOR DE PESSOAS
+# =========================================
+elif options == '4':
+    subprocess.run(['python3', 'gerador de pessoas.py'] cwd=BASE_DIR / 'Fat_Man-Olho_de_Deus')
+
 # ==========================================
-# OPÇÃO 4 — ATUALIZAR PAINEL
+# OPÇÃO 5 — ATUALIZAR PAINEL
 # ==========================================
 elif options == '5':
     atualizar = input("""
@@ -266,10 +273,11 @@ Escolha: """)
         exit()
 
 # ==========================================
-# OPÇÃO 5 — SAIR
+# OPÇÃO 6 — SAIR
 # ==========================================
 elif options == '6':
     exit()
+
 
 
 
