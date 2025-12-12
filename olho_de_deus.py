@@ -97,8 +97,9 @@ options = input("""
       [2] Instalar ferramentas
       [3] Scan divino
       [4] Gerador de Pessoas
-      [5] Atualizar Painel
-      [6] Sair
+      [5] Gerador de CPF
+      [6] Atualizar Painel
+      [7] Sair
 Escolha: """)
 
 # ==========================================
@@ -256,6 +257,11 @@ Escolha: """)
 # =========================================
 elif options == '4':
     subprocess.run(['python3', 'gerador de pessoas.py'])
+
+# =========================================
+# OPÇÃO 5 - GERADOR DE PESSOAS
+# =========================================
+elif options == '5':
     subprocess.run(['python3', 'gerador de cpf.py'])
 
 # ==========================================
@@ -278,6 +284,7 @@ Escolha: """)
 # ==========================================
 elif options == '6':
     exit()
+
 
 
 
