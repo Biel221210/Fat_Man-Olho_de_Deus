@@ -224,7 +224,7 @@ Escolha: """)
         exit()
 
 # ==========================================
-# OPÇÃO 5 — SCAN DIVINO (NMAP)
+# OPÇÃO 3 — SCAN DIVINO (NMAP)
 # ==========================================
 elif options == '3':
 
@@ -282,9 +282,9 @@ elif options == '5':
     subprocess.run(['python3', 'gerador de cpf.py'])
 
 # ==========================================
-# OPÇÃO 5 — ATUALIZAR PAINEL
+# OPÇÃO 6 — ATUALIZAR PAINEL
 # ==========================================
-elif options == '5':
+elif options == '6':
     atualizar = input("""
 [1] Atualizar o painel
 [2] Sair
@@ -299,8 +299,9 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 6 — SAIR
 # ==========================================
-elif options == '6':
+elif options == '7':
     exit()
+
 
 
 
