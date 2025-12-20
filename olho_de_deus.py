@@ -154,8 +154,10 @@ elif options == '2':
 [3] MaxPhisher
 [4] TrackIP
 [5] Clownters.py
-[6] Voltar ao painel
-[7] Sair
+[6] Doxxer ToolKit
+[7] Seeker (Abra outro terminal e cole o seguinte comando: 'brew install ngrok/ngrok/ngrok' e 'ngrok http 8080')
+[8] Voltar ao painel
+[9] Sair
 Escolha: """)
 
     # RED HAWK
@@ -190,10 +192,25 @@ Escolha: """)
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
         subprocess.run(['bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
 
+    # Dooxer Tool Kit
     elif tool == '6':
+        instalar_pacote("git")
+        instalar_pacote("python3")
+        subprocess.run(['git', 'clone', 'https://github.com/Euronymou5/Doxxer-Toolkit'], cwd=BASE_DIR)
+        subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Doxxer-Toolkit')
+        subprocess.run(['python3', 'dox_en.py'], cwd=BASE_DIR / 'Doxxer-Toolkit')
+
+    # Seeker
+    elif tool == '7':
+        subprocess.run(['git', 'clone', 'https://github.com/thewhiteh4t/seeker.git'], cwd=BASE_DIR)
+        subprocess.run(['chmod', '+x', 'install.sh'], cwd=BASE_DIR / 'seeker')
+        subprocess.run(['./install.sh'], cwd=BASE_DIR / 'seeker')
+        subprocess.run(['python3', 'seeker.py'])
+
+    elif tool == '8':
         reiniciar()
 
-    elif tool == '7':
+    elif tool == '9':
         exit()
 
     saida = input("""
@@ -284,6 +301,7 @@ Escolha: """)
 # ==========================================
 elif options == '6':
     exit()
+
 
 
 
