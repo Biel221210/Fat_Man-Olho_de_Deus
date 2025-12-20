@@ -155,7 +155,7 @@ elif options == '2':
 [4] TrackIP
 [5] Clownters.py
 [6] Doxxer ToolKit
-[7] Seeker (Abra outro terminal e cole o seguinte comando: 'brew install ngrok/ngrok/ngrok' e 'ngrok http 8080')
+[7] Seeker (Abra outro terminal e cole o seguinte comando: 'ssh -R 80:localhost:8080 nokey@localhost.run')
 [8] Voltar ao painel
 [9] Sair
 Escolha: """)
@@ -301,6 +301,7 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
 
 
 
