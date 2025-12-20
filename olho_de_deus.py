@@ -205,7 +205,7 @@ Escolha: """)
         subprocess.run(['git', 'clone', 'https://github.com/thewhiteh4t/seeker.git'], cwd=BASE_DIR)
         subprocess.run(['chmod', '+x', 'install.sh'], cwd=BASE_DIR / 'seeker')
         subprocess.run(['./install.sh'], cwd=BASE_DIR / 'seeker')
-        subprocess.run(['python3', 'seeker.py'])
+        subprocess.run(['python3', 'seeker.py'], cwd=BASE_DIR / 'seeker')
 
     elif tool == '8':
         reiniciar()
@@ -301,6 +301,7 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
 
 
 
