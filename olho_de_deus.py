@@ -275,11 +275,31 @@ Escolha: """)
 elif options == '4':
     subprocess.run(['python3', 'gerador de pessoas.py'])
 
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+    if saida == '1':
+        reiniciar()
+    else:
+        exit()
+
 # =========================================
 # OPÇÃO 5 - GERADOR DE PESSOAS
 # =========================================
 elif options == '5':
     subprocess.run(['python3', 'gerador de cpf.py'])
+
+saida = input("""
+[1] Continuar no painel
+[2] Sair
+Escolha: """)
+
+    if saida == '1':
+        reiniciar()
+    else:
+        exit()
 
 # ==========================================
 # OPÇÃO 6 — ATUALIZAR PAINEL
@@ -301,6 +321,7 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
 
 
 
