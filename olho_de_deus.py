@@ -278,29 +278,30 @@ elif options == '4':
 # =========================================
 # OPÇÃO 5 - GERADOR DE PESSOAS
 # =========================================
-    elif options == '5':
-        subprocess.run(['python3', 'gerador de cpf.py'])
+elif options == '5':
+    subprocess.run(['python3', 'gerador de cpf.py'])
 
 # ==========================================
 # OPÇÃO 6 — ATUALIZAR PAINEL
 # ==========================================
-    elif options == '6':
-        atualizar = input("""
-    [1] Atualizar o painel
-    [2] Sair
-    Escolha: """)
+elif options == '6':
+    atualizar = input("""
+[1] Atualizar o painel
+[2] Sair
+Escolha: """)
 
-        if atualizar == '1':
-            atualizar_repo()
-            reiniciar()
-        else:
-            exit()
+    if atualizar == '1':
+        atualizar_repo()
+        reiniciar()
+    else:
+        exit()
 
 # ==========================================
 # OPÇÃO 6 — SAIR
 # ==========================================
     elif options == '7':
         exit()
+
 
 
 
