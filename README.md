@@ -20,7 +20,7 @@ informações e instalar ferramentas externas.
 ### **1. Informações de sites**
 
 Mostra informações armazenadas em arquivos (`INFO SITE ETAPA`,
-`INFO PREFEITURA HORTOLANDIA`, `INFO JUSBRASIL`).
+`INFO PREFEITURA HORTOLANDIA`, `INFO JUSBRASIL`, `FUNDAÇÃO CEFET MINAS`).
 
 ### **2. Instalar ferramentas**
 
@@ -31,13 +31,23 @@ Atualmente inclui:
 -   **MaxPhisher** (Python, pipx)
 -   **TrackIp** (Shell)
 -   **Clownters.py** (Python)
+-   **Doxxer Toolkit** (Python)
+-   **Seeker** (Python)
 
 Cada ferramenta é baixada automaticamente com `git clone` e executada no
 diretório correto.
 
-### **3. Crecenciais do Céu**
+### **3. Scan Divino**
 
-Puxa direto do JUsBrasil **AVISO** SE O NOME EM QUESTÃO NÃO ESTIVER CADASTRADO NO JUSBRASIL, O CODIGO RETORNARA ERRO.
+Te da algumas opções do nmap para scan de site ou ip's
+
+### **4. Gerador de Pessoas**
+
+Gera um nome aleatório de acordo com um sexo escolhido (ele também te da uma idade)
+
+### **5. Gerador de CPF**
+
+usa o cálculo do governo para gerar um CPF
 
 ------------------------------------------------------------------------
 
