@@ -194,8 +194,6 @@ Escolha: """)
 
     # Dooxer Tool Kit
     elif tool == '6':
-        instalar_pacote("git")
-        instalar_pacote("python3")
         subprocess.run(['git', 'clone', 'https://github.com/Euronymou5/Doxxer-Toolkit'], cwd=BASE_DIR)
         subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Doxxer-Toolkit')
         subprocess.run(['python3', 'dox_en.py'], cwd=BASE_DIR / 'Doxxer-Toolkit')
@@ -301,3 +299,4 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
