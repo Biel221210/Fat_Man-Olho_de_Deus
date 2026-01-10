@@ -154,10 +154,9 @@ elif options == '2':
 [3] MaxPhisher
 [4] TrackIP
 [5] Clownters.py
-[6] Doxxer ToolKit
-[7] Seeker (Abra outro terminal e cole o seguinte comando: 'ssh -R 80:localhost:8080 nokey@localhost.run')
-[8] Voltar ao painel
-[9] Sair
+[6] Seeker (Abra outro terminal e cole o seguinte comando: 'ssh -R 80:localhost:8080 nokey@localhost.run')
+[7] Voltar ao painel
+[8] Sair
 Escolha: """)
 
     # RED HAWK
@@ -192,23 +191,17 @@ Escolha: """)
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
         subprocess.run(['bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
 
-    # Dooxer Tool Kit
+        # Seeker
     elif tool == '6':
-        subprocess.run(['git', 'clone', 'https://github.com/Euronymou5/Doxxer-Toolkit'], cwd=BASE_DIR)
-        subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Doxxer-Toolkit')
-        subprocess.run(['python3', 'dox_en.py'], cwd=BASE_DIR / 'Doxxer-Toolkit')
-
-    # Seeker
-    elif tool == '7':
         subprocess.run(['git', 'clone', 'https://github.com/thewhiteh4t/seeker.git'], cwd=BASE_DIR)
         subprocess.run(['chmod', '+x', 'install.sh'], cwd=BASE_DIR / 'seeker')
         subprocess.run(['./install.sh'], cwd=BASE_DIR / 'seeker')
         subprocess.run(['python3', 'seeker.py'], cwd=BASE_DIR / 'seeker')
 
-    elif tool == '8':
+    elif tool == '7':
         reiniciar()
 
-    elif tool == '9':
+    elif tool == '8':
         exit()
 
     saida = input("""
@@ -299,4 +292,5 @@ Escolha: """)
 # ==========================================
 elif options == '7':
     exit()
+
 
