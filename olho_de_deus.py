@@ -1,302 +1,222 @@
-import subprocess
-import os
-from pathlib import Path
-import shutil
 
-# SETA O VERDÃO AQUI
+from pathlib import Path
+import subprocess
+import shutil
+import os
+import sys
+
 VERDE = "\033[92m"
 VERDE_NEON = "\033[38;5;46m"
+VERMELHO = "\033[91m"
+AMARELO = "\033[93m"
 RESET = "\033[0m"
 
-print("\033[0;32m")
-
-# Tenta exibir ASCII inicial
-subprocess.run(['clear'])
-subprocess.run(['cat', 'art_ascii'], stderr=subprocess.DEVNULL)
-
-# ==========================================
-# CONFIG UNIVERSAL
-# ==========================================
 BASE_DIR = Path.home() / "Fat_Man-Olho_de_Deus"
 BASE_DIR.mkdir(exist_ok=True)
 
-# Limpa tela
-subprocess.run(["clear"])
+ASCII_PATH = BASE_DIR / "art_ascii"
 
-# Mostra ASCII salvo na pasta
-ascii_path = BASE_DIR / "art_ascii"
-if ascii_path.exists():
-    subprocess.run(["cat", str(ascii_path)])
+def clear():
+    subprocess.run(["clear"])
 
-# ==========================================
-# INSTALAÇÃO UNIVERSAL DE PACOTES
-# ==========================================
+def pause():
+    input(AMARELO + "\nPressione ENTER para continuar..." + RESET)
+
+def reiniciar():
+    os.execv(sys.executable, [sys.executable, str(Path(__file__))])
+
+def aviso_legal():
+    print(VERMELHO + """
+⚠️ AVISO ⚠️
+Use este painel APENAS para fins educacionais,
+laboratório, CTF ou com permissão explícita.
+Você é responsável por tudo que executar aqui.
+""" + RESET)
+    pause()
+
+def mostrar_ascii():
+    clear()
+    if ASCII_PATH.exists():
+        subprocess.run(["cat", str(ASCII_PATH)])
+    else:
+        print(VERDE_NEON + "Olho de Deus ativo." + RESET)
+
 def instalar_pacote(pacote):
-    # Termux (pkg)
     if shutil.which("pkg"):
-        print(f"Instalando {pacote} via pkg...")
         subprocess.run(["pkg", "install", "-y", pacote])
-        return
-
-    # apt (Ubuntu, Debian, Kali etc)
-    if shutil.which("apt"):
-        print(f"Instalando {pacote} via apt...")
-        subprocess.run(["sudo", "apt", "update", "-y"])
+    elif shutil.which("apt"):
+        subprocess.run(["sudo", "apt", "update"])
         subprocess.run(["sudo", "apt", "install", "-y", pacote])
-        return
-
-    # pacman (Arch, Manjaro)
-    if shutil.which("pacman"):
-        print(f"Instalando {pacote} via pacman...")
+    elif shutil.which("pacman"):
         subprocess.run(["sudo", "pacman", "-Sy", pacote, "--noconfirm"])
-        return
-
-    # dnf (Fedora)
-    if shutil.which("dnf"):
-        print(f"Instalando {pacote} via dnf...")
+    elif shutil.which("dnf"):
         subprocess.run(["sudo", "dnf", "install", "-y", pacote])
-        return
+    else:
+        print(VERMELHO + f"Instale manualmente: {pacote}" + RESET)
 
-    # yum (CentOS)
-    if shutil.which("yum"):
-        print(f"Instalando {pacote} via yum...")
-        subprocess.run(["sudo", "yum", "install", "-y", pacote])
-        return
+def clone_repo(url, pasta):
+    destino = BASE_DIR / pasta
+    if not destino.exists():
+        subprocess.run(["git", "clone", url, str(destino)])
+    return destino
 
-    print(f"Não foi possível instalar o pacote {pacote}. Instale manualmente.")
-
-# ==========================================
-# ATUALIZAR O REPOSITÓRIO DO PAINEL
-# ==========================================
 def atualizar_repo():
     if (BASE_DIR / ".git").exists():
-        print("Atualizando painel...")
         subprocess.run(["git", "pull"], cwd=BASE_DIR)
     else:
-        print("Repositório não encontrado. Clonando...")
         subprocess.run([
             "git", "clone",
             "https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git",
             str(BASE_DIR)
         ])
 
-# ==========================================
-# FUNÇÃO DE REINICIAR O PAINEL
-# ==========================================
-def reiniciar():
-    subprocess.run(["python3", str(Path(__file__))])
-    exit()
+def menu_principal():
+    mostrar_ascii()
+    print(VERDE_NEON + "Olá meu filho. Diga, o que queres?\n" + RESET)
+    print("""
+[1] Informações de sites
+[2] Ferramentas
+[3] Scan divino (Nmap)
+[4] Gerador de Pessoas
+[5] Gerador de CPF
+[6] Atualizar Painel
+[7] Sair
+""")
+    return input("Escolha: ")
 
-# ==========================================
-# TELA PRINCIPAL
-# ==========================================
-print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + RESET)
-
-options = input("""
-      [1] Informações de sites
-      [2] Instalar ferramentas
-      [3] Scan divino
-      [4] Gerador de Pessoas
-      [5] Gerador de CPF
-      [6] Atualizar Painel
-      [7] Sair
-Escolha: """)
-
-# ==========================================
-# OPÇÃO 1 — INFO DE SITES
-# ==========================================
-if options == '1':
-    info = input("""
+def menu_info():
+    print("""
 [1] Etapa.com
 [2] Hortolândia.gov
 [3] JusBrasil
 [4] Fundação CefetMinas
-[5] Voltar ao painel
+[5] Voltar
 [6] Sair
-Escolha: """)
+""")
+    return input("Escolha: ")
 
-    if info == '1':
-        subprocess.run(["cat", str(BASE_DIR / "INFO SITE ETAPA")])
-
-    elif info == '2':
-        subprocess.run(["cat", str(BASE_DIR / "INFO PREFEITURA HORTOLANDIA")])
-
-    elif info == '3':
-        subprocess.run(["cat", str(BASE_DIR / "INFO JUSBRASIL")])
-
-    elif info == '4':
-        subprocess.run(["cat", str(BASE_DIR / "FUNDAÇÃO CEFETMINAS")])
-
-    elif info == '5':
-        reiniciar()
-
-    elif info == '6':
-        exit()
-
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-
-    if saida == '1':
-        reiniciar()
-    else:
-        exit()
-
-# ==========================================
-# OPÇÃO 2 — FERRAMENTAS
-# ==========================================
-elif options == '2':
-
-    tool = input("""
+def menu_tools():
+    print("""
 [1] RED HAWK
-[2] GAMKERS DDOS
-[3] MaxPhisher
-[4] TrackIP
-[5] Clownters.py
-[6] Doxxer ToolKit
-[7] Seeker (Abra outro terminal e cole o seguinte comando: 'ssh -R 80:localhost:8080 nokey@localhost.run')
-[8] Voltar ao painel
-[9] Sair
-Escolha: """)
+[2] MaxPhisher
+[3] TrackIP
+[4] Seeker
+[5] Voltar
+[6] Sair
+""")
+    return input("Escolha: ")
 
-    # RED HAWK
-    if tool == '1':
-        subprocess.run(["git", "clone", "https://github.com/Tuhinshubhra/RED_HAWK"], cwd=BASE_DIR)
-        subprocess.run(["php", "rhawk.php"], cwd=BASE_DIR / "RED_HAWK")
+def menu_nmap():
+    print("""
+[1] IP (Agressivo)
+[2] IP (Stealth)
+[3] Vulnerabilidades (site)
+[4] Site normal
+[5] Voltar
+""")
+    return input("Escolha: ")
 
-    # Gamkers DDOS
-    elif tool == '2':
-        instalar_pacote("python2")
-        subprocess.run(["git", "clone", "https://github.com/gamkers/GAMKERS-DDOS.git"], cwd=BASE_DIR)
-        subprocess.run(["python2", "GAMKERS-DDOS.py"], cwd=BASE_DIR / "GAMKERS-DDOS")
+def main():
+    aviso_legal()
 
-    # MaxPhisher
-    elif tool == '3':
-        subprocess.run("pip install pipx", shell=True)
-        subprocess.run("pipx ensurepath", shell=True)
-        subprocess.run("pipx install maxphisher", shell=True)
-        subprocess.run("maxphisher", shell=True)
+    while True:
+        opcao = menu_principal()
 
-    # Track IP
-    elif tool == '4':
-        instalar_pacote("git")
-        instalar_pacote("curl")
-        subprocess.run(["git", "clone", "https://github.com/htr-tech/track-ip.git"], cwd=BASE_DIR)
-        subprocess.run(["bash", "trackip"], cwd=BASE_DIR / "track-ip")
+        if opcao == "1":
+            info = menu_info()
+            arquivos = {
+                "1": "INFO_SITE_ETAPA",
+                "2": "INFO_PREFEITURA_HORTOLANDIA",
+                "3": "INFO_JUSBRASIL",
+                "4": "FUNDACAO_CEFETMINAS"
+            }
 
-    # Clownters
-    elif tool == '5':
-        instalar_pacote("git")
-        instalar_pacote("python2")
-        subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
-        subprocess.run(['bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
+            if info in arquivos:
+                arq = BASE_DIR / arquivos[info]
+                if arq.exists():
+                    subprocess.run(["cat", str(arq)])
+                else:
+                    print(VERMELHO + "Arquivo não encontrado." + RESET)
+                pause()
+            elif info == "5":
+                continue
+            elif info == "6":
+                sys.exit()
 
-    # Dooxer Tool Kit
-    elif tool == '6':
-        subprocess.run(['git', 'clone', 'https://github.com/Euronymou5/Doxxer-Toolkit'], cwd=BASE_DIR)
-        subprocess.run(['sudo', 'bash', 'install.sh'], cwd=BASE_DIR / 'Doxxer-Toolkit')
-        subprocess.run(['python3', 'dox_en.py'], cwd=BASE_DIR / 'Doxxer-Toolkit')
+        elif opcao == "2":
+            tool = menu_tools()
 
-    # Seeker
-    elif tool == '7':
-        subprocess.run(['git', 'clone', 'https://github.com/thewhiteh4t/seeker.git'], cwd=BASE_DIR)
-        subprocess.run(['chmod', '+x', 'install.sh'], cwd=BASE_DIR / 'seeker')
-        subprocess.run(['./install.sh'], cwd=BASE_DIR / 'seeker')
-        subprocess.run(['python3', 'seeker.py'], cwd=BASE_DIR / 'seeker')
+            if tool == "1":
+                aviso_legal()
+                repo = clone_repo("https://github.com/Tuhinshubhra/RED_HAWK", "RED_HAWK")
+                subprocess.run(["php", "rhawk.php"], cwd=repo)
 
-    elif tool == '8':
-        reiniciar()
+            elif tool == "2":
+                aviso_legal()
+                subprocess.run("pipx install maxphisher", shell=True)
+                subprocess.run("maxphisher", shell=True)
 
-    elif tool == '9':
-        exit()
+            elif tool == "3":
+                aviso_legal()
+                instalar_pacote("git")
+                instalar_pacote("curl")
+                repo = clone_repo("https://github.com/htr-tech/track-ip.git", "track-ip")
+                subprocess.run(["bash", "trackip"], cwd=repo)
 
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
+            elif tool == "4":
+                aviso_legal()
+                repo = clone_repo("https://github.com/thewhiteh4t/seeker.git", "seeker")
+                subprocess.run(["chmod", "+x", "install.sh"], cwd=repo)
+                subprocess.run(["./install.sh"], cwd=repo)
+                subprocess.run(["python3", "seeker.py"], cwd=repo)
 
-    if saida == '1':
-        reiniciar()
-    else:
-        exit()
+            elif tool == "5":
+                continue
+            elif tool == "6":
+                sys.exit()
 
-# ==========================================
-# OPÇÃO 3 — SCAN DIVINO (NMAP)
-# ==========================================
-elif options == '3':
+        elif opcao == "3":
+            instalar_pacote("nmap")
+            scan = menu_nmap()
 
-    instalar_pacote("nmap")
+            if scan in ["1", "2", "3", "4"]:
+                alvo = input("IP ou site: ")
+                if scan == "1":
+                    subprocess.run(["nmap", "-A", "-Pn", "-T4", alvo])
+                elif scan == "2":
+                    subprocess.run(["nmap", "-sS", "-Pn", "-T4", alvo])
+                elif scan == "3":
+                    subprocess.run(["nmap", "--script", "vuln", alvo])
+                elif scan == "4":
+                    subprocess.run(["nmap", alvo])
+                pause()
 
-    escolha = input("""
-O que desejas scanear, filho meu?
+        elif opcao == "4":
+            script = BASE_DIR / "gerador_pessoas.py"
+            if script.exists():
+                subprocess.run(["python3", str(script)])
+            else:
+                print(VERMELHO + "Script não encontrado." + RESET)
+                pause()
 
-[1] Ip (Agressivo)
-[2] Ip (Stealth)
-[3] Scan de Vulnerabilidades (site)
-[4] Site (normal)
-[5] Sair
-Escolha: """)
+        elif opcao == "5":
+            script = BASE_DIR / "gerador_cpf.py"
+            if script.exists():
+                subprocess.run(["python3", str(script)])
+            else:
+                print(VERMELHO + "Script não encontrado." + RESET)
+                pause()
 
-    if escolha == '1':
-        Ip = input('Qual IP deseja scanear? ')
-        subprocess.run(['nmap', '-A', Ip])
+        elif opcao == "6":
+            atualizar_repo()
+            reiniciar()
 
-    elif escolha == '2':
-        Ip = input('Qual IP deseja scanear? ')
-        subprocess.run(['nmap', '-sS', Ip])
+        elif opcao == "7":
+            sys.exit()
 
-    elif escolha == '3':
-        site = input('Qual site você deseja scanear? ')
-        subprocess.run(['nmap', '--script', 'vuln', site])
+        else:
+            print(VERMELHO + "Opção inválida." + RESET)
+            pause()
 
-    elif escolha == '4':
-        site = input('Qual site deseja scanear? ')
-        subprocess.run(['nmap', site])
-
-    elif escolha == '5':
-        exit()
-
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-
-    if saida == '1':
-        reiniciar()
-    else:
-        exit()
-
-# =========================================
-# OPÇÃO 4 - GERADOR DE PESSOAS
-# =========================================
-elif options == '4':
-    subprocess.run(['python3', 'gerador de pessoas.py'])
-
-# =========================================
-# OPÇÃO 5 - GERADOR DE PESSOAS
-# =========================================
-elif options == '5':
-    subprocess.run(['python3', 'gerador de cpf.py'])
-
-# ==========================================
-# OPÇÃO 6 — ATUALIZAR PAINEL
-# ==========================================
-elif options == '6':
-    atualizar = input("""
-[1] Atualizar o painel
-[2] Sair
-Escolha: """)
-
-    if atualizar == '1':
-        atualizar_repo()
-        reiniciar()
-    else:
-        exit()
-
-# ==========================================
-# OPÇÃO 6 — SAIR
-# ==========================================
-elif options == '7':
-    exit()
-
+if __name__ == "__main__":
+    main()
