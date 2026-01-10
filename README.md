@@ -31,7 +31,6 @@ Atualmente inclui:
 -   **MaxPhisher** (Python, pipx)
 -   **TrackIp** (Shell)
 -   **Clownters.py** (Python)
--   **Doxxer Toolkit** (Python)
 -   **Seeker** (Python)
 
 Cada ferramenta é baixada automaticamente com `git clone` e executada no
