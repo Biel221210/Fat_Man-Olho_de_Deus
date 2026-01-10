@@ -1,3 +1,1349 @@
+B A S I C   I N F O                                                                                                                                                                                               
+====================                                                                                                                                                                                              
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+[+] Site Title: Sistema ETAPA | Home
+[+] IP address: 191.233.242.93
+[+] Web Server: nginx/1.28.0                                                                                                                                                                                      
+[+] CMS: Could Not Detect 
+[+] Cloudflare: Not Detected
+[+] Robots File: Found                                                                                                                                                                                            
+
+-------------[ contents ]----------------                                                                                                                                                                         
+User-agent: *
+Disallow:
+
+-----------[end of contents]-------------                                                                                                                                                                         
+
+
+
+W H O I S   L O O K U P
+========================                                                                                                                                                                                          
+                                                                                                                                                                                                                  
+        error valid key required                                                                                                                                                                                  
+
+
+
+G E O  I P  L O O K  U P
+=========================                                                                                                                                                                                         
+                                                                                                                                                                                                                  
+[i] IP: 191.233.242.93                                                                                                                                                                                            
+[i] Country: Brazil 
+[i] State: São Paulo 
+[i] City: Campinas 
+[i] Latitude: -22.8951 
+[i] Longitude: -47.0439 
+
+
+
+
+H T T P   H E A D E R S
+=======================                                                                                                                                                                                           
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+[i]  HTTP/1.1 200 OK
+[i]  Date: Sat, 10 Jan 2026 16:30:47 GMT
+[i]  Content-Type: text/html; charset=UTF-8
+[i]  Transfer-Encoding: chunked
+[i]  Connection: close
+[i]  Set-Cookie: ApplicationGatewayAffinityCORS=ce744c983d5c23ca0d225e4da36e19ba; Path=/; SameSite=None; Secure
+[i]  Set-Cookie: ApplicationGatewayAffinity=ce744c983d5c23ca0d225e4da36e19ba; Path=/
+[i]  Server: nginx/1.28.0
+[i]  Cache-Control: no-cache, private
+[i]  Set-Cookie: XSRF-TOKEN=eyJpdiI6InJuT3ZObkRndWtmVCs2OVdlbVkrNFE9PSIsInZhbHVlIjoiWnpZaTlOTHhqL1R1RVpmemxIQTkrSWRPdjMxaW9DZUJJeWVjZ2pHMXpGcUVzTWVpV2RPd1V0dUVBK1pLM1Myak9MaXBiOWJvWWFGZ2lQR0hxSXIwL2xQeWMyNGp2Z2lXU1ZWbit0WmpnY2FyMlNUUVdhZnVXYmRYNEloSDhtWGciLCJtYWMiOiI2Y2U2ODA3YTI5ZWRmNTg2OGQ4MmNlMWQxMTE4ZWQxNzI1NjkwNTcyY2Q0M2Y2ZGI4ODA3YzIzMzJiYTQyZDY5IiwidGFnIjoiIn0%3D; expires=Sat, 10-Jan-2026 18:30:47 GMT; Max-Age=7200; path=/; samesite=lax
+[i]  Set-Cookie: sistema_etapa_session=eyJpdiI6Ilo5OHJDN1FLMGRLQjNXWklQVEJJV0E9PSIsInZhbHVlIjoiQi9ic0RmS1F1ZExCNjNLSDF0K2RDTWR4c3BQVUZiNGlaNEdDUStUYnUwWGtNWWwzTEJsQUFBVW1KWWpTeW8zSnViaEUzR050d3M1ZWJiQ3JCY3NUZ0Nrd3VmVlBSLzRod0xyMlJxWEpqb29KNGVOZFJpTWFhUjUxMk1rZ2ZpdEciLCJtYWMiOiJkOTk2YzgzN2IxNGIxM2NjNGJlODMzNDExZTNkNTJlNDFhYzNkYjIzOTNhMmM2ZDljOTQ2M2M0MmVhMTlmNzljIiwidGFnIjoiIn0%3D; expires=Sat, 10-Jan-2026 18:30:47 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+[i]  X-Powered-By: PHP/8.2.29
+
+
+
+
+D N S   L O O K U P
+===================                                                                                                                                                                                               
+                                                                                                                                                                                                                  
+A : 191.233.242.93                                                                                                                                                                                                
+MX : 1 aspmx.l.google.com.
+MX : 10 alt4.aspmx.l.google.com.
+MX : 5 alt1.aspmx.l.google.com.
+MX : 5 alt2.aspmx.l.google.com.
+MX : 10 alt3.aspmx.l.google.com.
+NS : ns-514.awsdns-00.net.
+NS : ns-1622.awsdns-10.co.uk.
+NS : ns-1063.awsdns-04.org.
+NS : ns-124.awsdns-15.com.
+TXT : v=spf1 a mx include:spf.mcdns.com.br include:_spf.salesforce.com ~all
+TXT : google-site-verification=P7hhydbAAKBLOGJvJVV-umBb3ACf7D5ST8aEJO7c0H4
+SOA : ns-124.awsdns-15.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
+
+
+
+S U B N E T   C A L C U L A T I O N
+====================================                                                                                                                                                                              
+                                                                                                                                                                                                                  
+Address       = 191.233.242.93                                                                                                                                                                                    
+Network       = 191.233.242.93/32
+Netmask       = 255.255.255.255
+Broadcast     = 191.233.242.93
+Wildcard Mask = 0.0.0.0
+Hosts Bits    = 0
+Max. Hosts    = 1
+Host Range    = 191.233.242.94 - 191.233.242.92
+IP Class      = B
+CIDR Notation = 191.233.242.93/32
+IP Version    = IPv4
+Is Private    = No
+DNS Hostname  = No hostname found
+
+
+
+N M A P   P O R T   S C A N
+============================                                                                                                                                                                                      
+                                                                                                                                                                                                                  
+error valid key required                                                                                                                                                                                          
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+S U B - D O M A I N   F I N D E R                                                                                                                                                                                 
+==================================                                                                                                                                                                                
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+[i] Total Subdomains Found : 4                                                                                                                                                                                    
+                                                                                                                                                                                                                  
+[+] Subdomain: aluno.sistemaetapa.com.br                                                                                                                                                                          
+[-] IP: 191.237.202.78                                                                                                                                                                                            
+                                                                                                                                                                                                                  
+[+] Subdomain: image.conteudo.sistemaetapa.com.br                                                                                                                                                                 
+[-] IP: 23.44.203.68                                                                                                                                                                                              
+                                                                                                                                                                                                                  
+[+] Subdomain: cursos.sistemaetapa.com.br                                                                                                                                                                         
+[-] IP: 34.192.133.193                                                                                                                                                                                            
+                                                                                                                                                                                                                  
+[+] Subdomain: parceiro.sistemaetapa.com.br                                                                                                                                                                       
+[-] IP: 191.237.202.78                                                                                                                                                                                            
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+
+
+
+R E V E R S E   I P   L O O K U P
+==================================                                                                                                                                                                                
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+[i] Total Sites Found On This Server : 0                                                                                                                                                                          
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+
+
+
+S Q L   V U L N E R A B I L I T Y   S C A N N E R
+===================================================                                                                                                                                                               
+
+ [#] https://www.youtube.com/watch?v=M7H5vhja1Jw&list=PLNO4xy-Uap8IZlb-5jYsAwqifplswis4g&index=7
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                         
+                                                                                                                                                                                                                  
+
+ [#] https://www.youtube.com/watch?v=YHn4d6GoKIA&list=PLNO4xy-Uap8IZlb-5jYsAwqifplswis4g&index=4
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                         
+                                                                                                                                                                                                                  
+
+ [#] https://www.youtube.com/watch?v=deiHCI7qSSs&list=PLNO4xy-Uap8IZlb-5jYsAwqifplswis4g&index=25
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                         
+                                                                                                                                                                                                                  
+
+ [#] https://www.youtube.com/watch?v=3V9tk9hA-u0&list=PLNO4xy-Uap8IZlb-5jYsAwqifplswis4g&index=9
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                         
+                                                                                                                                                                                                                  
+
+ [#] https://www.youtube.com/watch?v=kRZPQVQRV80&list=PLNO4xy-Uap8IZlb-5jYsAwqifplswis4g&index=24
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                         
+                                                                                                                                                                                                                  
+
+ [#] https://www.youtube.com/watch?v=4pu2mKejZ5c&list=PLNO4xy-Uap8IZlb-5jYsAwqifplswis4g&index=16
+ [-] Searching For SQL Errors:  Not Found                                                                                                                                                                         
+                                                                                                                                                                                                                  
+
+
+ [+] URL(s) With Parameter(s):6
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+C R A W L E R                                                                                                                                                                                                     
+=============                                                                                                                                                                                                     
+                                                                                                                                                                                                                  
+                                                                                                                                                                                                                  
+Crawling Types & Descriptions:                                                                                                                                                                                    
+
+69: This is the lite version of tge crawler, This will show you the files which returns the http code '200'. This is time efficient and less messy.
+
+420: This is a little advance one it will show you all the list of files with their http code other then the badboy 404. This is a little messier but informative 
+
+Select Crawler Type (69/420): 69
+
+         -[ B A S I C   C R A W L I N G ]-
+
+
+
+ Loading Crawler File ....
+
+[-] Admin Crawler File Found! Scanning For Admin Pannel [-]
+
+URLs Loaded: 817
+
+
+
+[U] https://www.sistemaetapa.com.br/admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin1/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin3/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin4/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin5/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuarios/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuario/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminarea/ : Found!
+
+[U] https://www.sistemaetapa.com.br/bb-admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_area/ : Found!
+
+[U] https://www.sistemaetapa.com.br/panel-administracion/ : Found!
+
+[U] https://www.sistemaetapa.com.br/instadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adm/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/home.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.html : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.html : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.html : Found!
+
+[U] https://www.sistemaetapa.com.br/account.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin1/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin3/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin4/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin5/ : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminarea/ : Found!
+
+[U] https://www.sistemaetapa.com.br/bb-admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_area/ : Found!
+
+[U] https://www.sistemaetapa.com.br/panel-administracion/ : Found!
+
+[U] https://www.sistemaetapa.com.br/instadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adm/ : Found!
+
+[U] https://www.sistemaetapa.com.br/account.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.html : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/account.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/acceso.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/login.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/user.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/home.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/home.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admloginuser.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/affiliate.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/adm_auth.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin.asp : Found!
+
+[U] https://www.sistemaetapa.com.br/admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin1/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin3/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin4/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin5/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuarios/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuario/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminarea/ : Found!
+
+[U] https://www.sistemaetapa.com.br/bb-admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_area/ : Found!
+
+[U] https://www.sistemaetapa.com.br/panel-administracion/ : Found!
+
+[U] https://www.sistemaetapa.com.br/instadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adm/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/login.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/account.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/acceso.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/home.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.html : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/account.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.html : Found!
+
+[U] https://www.sistemaetapa.com.br/wp-login.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/home.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admloginuser.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/affiliate.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/adm_auth.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin.cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin1/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin3/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin4/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin5/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuarios/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuario/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminarea/ : Found!
+
+[U] https://www.sistemaetapa.com.br/bb-admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_area/ : Found!
+
+[U] https://www.sistemaetapa.com.br/panel-administracion/ : Found!
+
+[U] https://www.sistemaetapa.com.br/instadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adm/ : Found!.
+
+[U] https://www.sistemaetapa.com.br/admin.js : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.js : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.js : Found!
+
+[U] https://www.sistemaetapa.com.br/login.js : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.js : Found!
+
+[U] https://www.sistemaetapa.com.br/account.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.js : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/home.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.js : Found!
+
+[U] https://www.sistemaetapa.com.br/acceso.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.js : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.html : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.js : Found!
+
+[U] https://www.sistemaetapa.com.br/account.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.html : Found!
+
+[U] https://www.sistemaetapa.com.br/wp-login.js : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.js : Found!
+
+[U] https://www.sistemaetapa.com.br/home.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admloginuser.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2.js : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.js : Found!
+
+[U] https://www.sistemaetapa.com.br/affiliate.js : Found!
+
+[U] https://www.sistemaetapa.com.br/adm_auth.js : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin.js : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin.js : Found!
+
+[U] https://www.sistemaetapa.com.br/admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin1/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin3/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin4/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin5/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuarios/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuario/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminarea/ : Found!
+
+[U] https://www.sistemaetapa.com.br/bb-admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_area/ : Found!
+
+[U] https://www.sistemaetapa.com.br/panel-administracion/ : Found!
+
+[U] https://www.sistemaetapa.com.br/instadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adm/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/login.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/account.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/home.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/acceso.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.html : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/account.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admincontrol.html : Found!
+
+[U] https://www.sistemaetapa.com.br/wp-login.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/home.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admloginuser.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/affiliate.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/adm_auth.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin.cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin1/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin2/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin3/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin4/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin5/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuarios/ : Found!
+
+[U] https://www.sistemaetapa.com.br/usuario/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator/ : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminarea/ : Found!
+
+[U] https://www.sistemaetapa.com.br/bb-admin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_area/ : Found!
+
+[U] https://www.sistemaetapa.com.br/panel-administracion/ : Found!
+
+[U] https://www.sistemaetapa.com.br/instadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/memberadmin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/administratorlogin/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adm/ : Found!
+
+[U] https://www.sistemaetapa.com.br/adminpanel.html : Found!
+
+[U] https://www.sistemaetapa.com.br/webadmin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin_login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin-login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adminLogin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/home.html : Found!
+
+[U] https://www.sistemaetapa.com.br/admin.html : Found!
+
+[U] https://www.sistemaetapa.com.br/cp.html : Found!
+
+[U] https://www.sistemaetapa.com.br/moderator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/user.html : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator.html : Found!
+
+[U] https://www.sistemaetapa.com.br/login.html : Found!
+
+[U] https://www.sistemaetapa.com.br/adm.html : Found!
+
+[U] https://www.sistemaetapa.com.br/account.html : Found!
+
+[U] https://www.sistemaetapa.com.br/controlpanel.html : Found!.
+[-] Backup Crawler File Found! Scanning For Site Backups [-]
+
+URLs Loaded: 1
+
+
+
+[U] https://www.sistemaetapa.com.br/ : Found!
+[-] General Crawler File Found! Crawling The Site [-]
+
+URLs Loaded: 1837
+
+
+
+[U] https://www.sistemaetapa.com.br/images : Found!
+
+[U] https://www.sistemaetapa.com.br/LC_MESSAGES : Found!
+
+[U] https://www.sistemaetapa.com.br/js : Found!
+
+[U] https://www.sistemaetapa.com.br/tmpl : Found!
+
+[U] https://www.sistemaetapa.com.br/lang : Found!
+
+[U] https://www.sistemaetapa.com.br/default : Found!
+
+[U] https://www.sistemaetapa.com.br/README : Found!
+
+[U] https://www.sistemaetapa.com.br/templates : Found!
+
+[U] https://www.sistemaetapa.com.br/langs : Found!
+
+[U] https://www.sistemaetapa.com.br/config : Found!
+
+[U] https://www.sistemaetapa.com.br/GNUmakefile : Found!
+
+[U] https://www.sistemaetapa.com.br/themes : Found!
+
+[U] https://www.sistemaetapa.com.br/en : Found!
+
+[U] https://www.sistemaetapa.com.br/img : Found!
+
+[U] https://www.sistemaetapa.com.br/admin : Found!
+
+[U] https://www.sistemaetapa.com.br/user : Found!
+
+[U] https://www.sistemaetapa.com.br/plugins : Found!
+
+[U] https://www.sistemaetapa.com.br/show : Found!
+
+[U] https://www.sistemaetapa.com.br/level : Found!
+
+[U] https://www.sistemaetapa.com.br/exec : Found!
+
+[U] https://www.sistemaetapa.com.br/po : Found!
+
+[U] https://www.sistemaetapa.com.br/icons : Found!
+
+[U] https://www.sistemaetapa.com.br/classes : Found!
+
+[U] https://www.sistemaetapa.com.br/includes : Found!
+
+[U] https://www.sistemaetapa.com.br/_notes : Found!
+
+[U] https://www.sistemaetapa.com.br/system : Found!
+
+[U] https://www.sistemaetapa.com.br/language : Found!
+
+[U] https://www.sistemaetapa.com.br/MANIFEST : Found!
+
+[U] https://www.sistemaetapa.com.br/modules : Found!
+
+[U] https://www.sistemaetapa.com.br/error_log : Found!
+
+[U] https://www.sistemaetapa.com.br/views : Found!
+
+[U] https://www.sistemaetapa.com.br/backup : Found!
+
+[U] https://www.sistemaetapa.com.br/db : Found!
+
+[U] https://www.sistemaetapa.com.br/lib : Found!
+
+[U] https://www.sistemaetapa.com.br/faqweb : Found!
+
+[U] https://www.sistemaetapa.com.br/articleweb : Found!
+
+[U] https://www.sistemaetapa.com.br/system32 : Found!
+
+[U] https://www.sistemaetapa.com.br/skins : Found!
+
+[U] https://www.sistemaetapa.com.br/_vti_cnf : Found!
+
+[U] https://www.sistemaetapa.com.br/models : Found!
+
+[U] https://www.sistemaetapa.com.br/news : Found!
+
+[U] https://www.sistemaetapa.com.br/cache : Found!
+
+[U] https://www.sistemaetapa.com.br/CVS : Found!
+
+[U] https://www.sistemaetapa.com.br/main : Found!
+
+[U] https://www.sistemaetapa.com.br/html : Found!
+
+[U] https://www.sistemaetapa.com.br/faq : Found!
+
+[U] https://www.sistemaetapa.com.br/update : Found!
+
+[U] https://www.sistemaetapa.com.br/extensions : Found!
+
+[U] https://www.sistemaetapa.com.br/jscripts : Found!
+
+[U] https://www.sistemaetapa.com.br/Packages : Found!
+
+[U] https://www.sistemaetapa.com.br/languages : Found!
+
+[U] https://www.sistemaetapa.com.br/features : Found!
+
+[U] https://www.sistemaetapa.com.br/pix : Found!
+
+[U] https://www.sistemaetapa.com.br/categoryblog : Found!
+
+[U] https://www.sistemaetapa.com.br/docs : Found!
+
+[U] https://www.sistemaetapa.com.br/thumbs : Found!
+
+[U] https://www.sistemaetapa.com.br/test : Found!
+
+[U] https://www.sistemaetapa.com.br/php : Found!
+
+[U] https://www.sistemaetapa.com.br/sp2qfe : Found!
+
+[U] https://www.sistemaetapa.com.br/data : Found!
+
+[U] https://www.sistemaetapa.com.br/sp2gdr : Found!
+
+[U] https://www.sistemaetapa.com.br/include : Found!
+
+[U] https://www.sistemaetapa.com.br/scripts : Found!
+
+[U] https://www.sistemaetapa.com.br/helpers : Found!
+
+[U] https://www.sistemaetapa.com.br/Extension : Found!
+
+[U] https://www.sistemaetapa.com.br/media : Found!
+
+[U] https://www.sistemaetapa.com.br/_vti_bin : Found!
+
+[U] https://www.sistemaetapa.com.br/webalizer : Found!
+
+[U] https://www.sistemaetapa.com.br/common : Found!
+
+[U] https://www.sistemaetapa.com.br/logs : Found!
+
+[U] https://www.sistemaetapa.com.br/search : Found!
+
+[U] https://www.sistemaetapa.com.br/customer : Found!
+
+[U] https://www.sistemaetapa.com.br/dialogs : Found!
+
+[U] https://www.sistemaetapa.com.br/src : Found!
+
+[U] https://www.sistemaetapa.com.br/cfdocs : Found!
+
+[U] https://www.sistemaetapa.com.br/INSTALL : Found!
+
+[U] https://www.sistemaetapa.com.br/winnt : Found!
+
+[U] https://www.sistemaetapa.com.br/rvtheme_admin : Found!
+
+[U] https://www.sistemaetapa.com.br/rvtheme : Found!
+
+[U] https://www.sistemaetapa.com.br/default_admin : Found!
+
+[U] https://www.sistemaetapa.com.br/default1 : Found!
+
+[U] https://www.sistemaetapa.com.br/LICENSE : Found!
+
+[U] https://www.sistemaetapa.com.br/Entries : Found!
+
+[U] https://www.sistemaetapa.com.br/10 : Found!
+
+[U] https://www.sistemaetapa.com.br/treeNav : Found!
+
+[U] https://www.sistemaetapa.com.br/locale : Found!
+
+[U] https://www.sistemaetapa.com.br/internals : Found!
+
+[U] https://www.sistemaetapa.com.br/style : Found!
+
+[U] https://www.sistemaetapa.com.br/Root : Found!
+
+[U] https://www.sistemaetapa.com.br/Repository : Found!
+
+[U] https://www.sistemaetapa.com.br/imapd : Found!
+
+[U] https://www.sistemaetapa.com.br/flags : Found!
+
+[U] https://www.sistemaetapa.com.br/defaultColorConf : Found!
+
+[U] https://www.sistemaetapa.com.br/template : Found!
+
+[U] https://www.sistemaetapa.com.br/authweb : Found!
+
+[U] https://www.sistemaetapa.com.br/COPYING : Found!
+
+[U] https://www.sistemaetapa.com.br/de_DE : Found!
+
+[U] https://www.sistemaetapa.com.br/english : Found!
+
+[U] https://www.sistemaetapa.com.br/fr_FR : Found!
+
+[U] https://www.sistemaetapa.com.br/asp : Found!
+
+[U] https://www.sistemaetapa.com.br/tmp : Found!
+
+[U] https://www.sistemaetapa.com.br/sql : Found!
+
+[U] https://www.sistemaetapa.com.br/source : Found!
+
+[U] https://www.sistemaetapa.com.br/doc : Found!
+
+[U] https://www.sistemaetapa.com.br/blocks : Found!
+
+[U] https://www.sistemaetapa.com.br/backgrounds : Found!
+
+[U] https://www.sistemaetapa.com.br/maint : Found!
+
+[U] https://www.sistemaetapa.com.br/help : Found!
+
+[U] https://www.sistemaetapa.com.br/nl_NL : Found!
+
+[U] https://www.sistemaetapa.com.br/administrator : Found!
+
+[U] https://www.sistemaetapa.com.br/version : Found!
+
+[U] https://www.sistemaetapa.com.br/category : Found!
+
+[U] https://www.sistemaetapa.com.br/Makefile : Found!
+
+[U] https://www.sistemaetapa.com.br/styles : Found!
+
+[U] https://www.sistemaetapa.com.br/toolbar : Found!
+
+[U] https://www.sistemaetapa.com.br/ra : Found!
+
+[U] https://www.sistemaetapa.com.br/iissamples : Found!
+
+[U] https://www.sistemaetapa.com.br/files : Found!
+
+[U] https://www.sistemaetapa.com.br/PDF : Found!
+
+[U] https://www.sistemaetapa.com.br/22 : Found!
+
+[U] https://www.sistemaetapa.com.br/catalog : Found!
+
+[U] https://www.sistemaetapa.com.br/libs : Found!
+
+[U] https://www.sistemaetapa.com.br/simpletest : Found!
+
+[U] https://www.sistemaetapa.com.br/database : Found!
+
+[U] https://www.sistemaetapa.com.br/06 : Found!
+
+[U] https://www.sistemaetapa.com.br/samples : Found!
+
+[U] https://www.sistemaetapa.com.br/libraries : Found!
+
+[U] https://www.sistemaetapa.com.br/fc_functions : Found!
+
+[U] https://www.sistemaetapa.com.br/16 : Found!
+
+[U] https://www.sistemaetapa.com.br/11 : Found!
+
+[U] https://www.sistemaetapa.com.br/fr : Found!
+
+[U] https://www.sistemaetapa.com.br/bg : Found!
+
+[U] https://www.sistemaetapa.com.br/01 : Found!
+
+[U] https://www.sistemaetapa.com.br/perl : Found!
+
+[U] https://www.sistemaetapa.com.br/controllers : Found!
+
+[U] https://www.sistemaetapa.com.br/12 : Found!
+
+[U] https://www.sistemaetapa.com.br/upload : Found!
+
+[U] https://www.sistemaetapa.com.br/no_NO : Found!
+
+[U] https://www.sistemaetapa.com.br/components : Found!
+
+[U] https://www.sistemaetapa.com.br/class : Found!
+
+[U] https://www.sistemaetapa.com.br/servlet : Found!
+
+[U] https://www.sistemaetapa.com.br/de : Found!
+
+[U] https://www.sistemaetapa.com.br/32 : Found!
+
+[U] https://www.sistemaetapa.com.br/1033 : Found!
+
+[U] https://www.sistemaetapa.com.br/temp : Found!
+
+[U] https://www.sistemaetapa.com.br/phpunit : Found!
+
+[U] https://www.sistemaetapa.com.br/info : Found!
+
+[U] https://www.sistemaetapa.com.br/_vti_pvt : Found!
+
+[U] https://www.sistemaetapa.com.br/09 : Found!
+
+[U] https://www.sistemaetapa.com.br/utils : Found!
+
+[U] https://www.sistemaetapa.com.br/fonts : Found!
+
+[U] https://www.sistemaetapa.com.br/contrib : Found!
+
+[U] https://www.sistemaetapa.com.br/app : Found!
+
+[U] https://www.sistemaetapa.com.br/tables : Found!
+
+[U] https://www.sistemaetapa.com.br/it : Found!
+
+[U] https://www.sistemaetapa.com.br/editor : Found!
+
+[U] https://www.sistemaetapa.com.br/demo : Found!
+
+[U] https://www.sistemaetapa.com.br/wget : Found!
+
+[U] https://www.sistemaetapa.com.br/ChangeLog : Found!
+
+[U] https://www.sistemaetapa.com.br/14 : Found!
+
+[U] https://www.sistemaetapa.com.br/03 : Found!
+
+[U] https://www.sistemaetapa.com.br/ru : Found!
+
+[U] https://www.sistemaetapa.com.br/login : Found!
+
+[U] https://www.sistemaetapa.com.br/graphics : Found!
+
+[U] https://www.sistemaetapa.com.br/elements : Found!
+
+[U] https://www.sistemaetapa.com.br/cfm : Found!
+
+[U] https://www.sistemaetapa.com.br/bullets : Found!
+
+[U] https://www.sistemaetapa.com.br/Sources : Found!
+
+[U] https://www.sistemaetapa.com.br/silver : Found!
+
+[U] https://www.sistemaetapa.com.br/07 : Found!
+
+[U] https://www.sistemaetapa.com.br/05 : Found!
+
+[U] https://www.sistemaetapa.com.br/dialog : Found!
+
+[U] https://www.sistemaetapa.com.br/02 : Found!
+
+[U] https://www.sistemaetapa.com.br/xmlrpc : Found!
+
+[U] https://www.sistemaetapa.com.br/smiley : Found!
+
+[U] https://www.sistemaetapa.com.br/msadc : Found!
+
+[U] https://www.sistemaetapa.com.br/mail : Found!
+
+[U] https://www.sistemaetapa.com.br/connectors : Found!
+
+[U] https://www.sistemaetapa.com.br/black : Found!
+
+[U] https://www.sistemaetapa.com.br/backups : Found!
+
+[U] https://www.sistemaetapa.com.br/GalleryStorage : Found!
+
+[U] https://www.sistemaetapa.com.br/Auth : Found!
+
+[U] https://www.sistemaetapa.com.br/04 : Found!
+
+[U] https://www.sistemaetapa.com.br/javascript : Found!
+
+[U] https://www.sistemaetapa.com.br/install : Found!
+
+[U] https://www.sistemaetapa.com.br/archive : Found!
+
+[U] https://www.sistemaetapa.com.br/_private : Found!
+
+[U] https://www.sistemaetapa.com.br/uploads : Found!
+
+[U] https://www.sistemaetapa.com.br/table : Found!
+
+[U] https://www.sistemaetapa.com.br/jqueryui : Found!
+
+[U] https://www.sistemaetapa.com.br/filemanager : Found!
+
+[U] https://www.sistemaetapa.com.br/email : Found!
+
+[U] https://www.sistemaetapa.com.br/dk : Found!
+
+[U] https://www.sistemaetapa.com.br/cgi : Found!
+
+[U] https://www.sistemaetapa.com.br/users : Found!
+
+[U] https://www.sistemaetapa.com.br/sv_SE : Found!
+
+[U] https://www.sistemaetapa.com.br/index : Found!
+
+[U] https://www.sistemaetapa.com.br/functions : Found!
+
+[U] https://www.sistemaetapa.com.br/examples : Found!
+
+[U] https://www.sistemaetapa.com.br/error : Found!
+
+[U] https://www.sistemaetapa.com.br/browser : Found!
+
+[U] https://www.sistemaetapa.com.br/TODO : Found!
+
+[U] https://www.sistemaetapa.com.br/13 : Found!
+
+[U] https://www.sistemaetapa.com.br/pt_BR : Found!
+
+[U] https://www.sistemaetapa.com.br/misc : Found!
+
+[U] https://www.sistemaetapa.com.br/image : Found!
+
+[U] https://www.sistemaetapa.com.br/com_content : Found!
+
+[U] https://www.sistemaetapa.com.br/categories : Found!
+
+[U] https://www.sistemaetapa.com.br/calendar : Found!
+
+[U] https://www.sistemaetapa.com.br/buttons : Found!
+
+[U] https://www.sistemaetapa.com.br/404 : Found!
+
+[U] https://www.sistemaetapa.com.br/tools : Found!
+
+[U] https://www.sistemaetapa.com.br/placeholder : Found!
+
+[U] https://www.sistemaetapa.com.br/phpmailer : Found!
+
+[U] https://www.sistemaetapa.com.br/old : Found!
+
+[U] https://www.sistemaetapa.com.br/moodle2 : Found!
+
+[U] https://www.sistemaetapa.com.br/bin : Found!
+
+[U] https://www.sistemaetapa.com.br/auth : Found!
+
+[U] https://www.sistemaetapa.com.br/Adapter : Found!
+
+[U] https://www.sistemaetapa.com.br/tinymce : Found!
+
+[U] https://www.sistemaetapa.com.br/msn : Found!
+
+[U] https://www.sistemaetapa.com.br/links : Found!
+
+[U] https://www.sistemaetapa.com.br/inc : Found!
+
+[U] https://www.sistemaetapa.com.br/feed : Found!
+
+[U] https://www.sistemaetapa.com.br/da_DK : Found!
+
+[U] https://www.sistemaetapa.com.br/apps : Found!
+
+[U] https://www.sistemaetapa.com.br/advanced : Found!
+
+[U] https://www.sistemaetapa.com.br/CREDITS : Found!
+
+[U] https://www.sistemaetapa.com.br/2010 : Found!
+
+[U] https://www.sistemaetapa.com.br/08 : Found!
+
+[U] https://www.sistemaetapa.com.br/moddata : Found!
+
+[U] https://www.sistemaetapa.com.br/mod_login : Found!
+
+[U] https://www.sistemaetapa.com.br/local : Found!
+
+[U] https://www.sistemaetapa.com.br/ja_JP : Found!
+
+[U] https://www.sistemaetapa.com.br/forum : Found!
+
+[U] https://www.sistemaetapa.com.br/fi_FI : Found!
+
+[U] https://www.sistemaetapa.com.br/drivers : Found!
+
+[U] https://www.sistemaetapa.com.br/cs_CZ : Found!
+
+[U] https://www.sistemaetapa.com.br/behaviors : Found!
+
+[U] https://www.sistemaetapa.com.br/secret : Found!
+
+[U] https://www.sistemaetapa.com.br/pt_PT : Found!
+
+[U] https://www.sistemaetapa.com.br/pl_PL : Found!
+
+[U] https://www.sistemaetapa.com.br/os : Found!
+
+[U] https://www.sistemaetapa.com.br/office2003 : Found!
+
+[U] https://www.sistemaetapa.com.br/geshi : Found!
+
+[U] https://www.sistemaetapa.com.br/gallery : Found!
+
+[U] https://www.sistemaetapa.com.br/flash : Found!
+
+[U] https://www.sistemaetapa.com.br/conf : Found!
+
+[U] https://www.sistemaetapa.com.br/caspsamp : Found!
+
+[U] https://www.sistemaetapa.com.br/application : Found!
+
+[U] https://www.sistemaetapa.com.br/access : Found!
+
+[U] https://www.sistemaetapa.com.br/RETAIL : Found!
+
+[U] https://www.sistemaetapa.com.br/tablecommands : Found!
+
+[U] https://www.sistemaetapa.com.br/pages : Found!
+
+[U] https://www.sistemaetapa.com.br/msft : Found!
 
 [U] https://www.sistemaetapa.com.br/log : Found!
 
@@ -70,8 +1416,6 @@
 [U] https://www.sistemaetapa.com.br/inlinepopups : Found!
 
 [U] https://www.sistemaetapa.com.br/group7 : Found!
-
-[U] https://www.sistemaetapa.com.br/group6 : Found!
 
 [U] https://www.sistemaetapa.com.br/group5 : Found!
 
@@ -453,6 +1797,8 @@
 
 [U] https://www.sistemaetapa.com.br/music : Found!
 
+[U] https://www.sistemaetapa.com.br/module : Found!
+
 [U] https://www.sistemaetapa.com.br/mod_stats : Found!
 
 [U] https://www.sistemaetapa.com.br/mod_banners : Found!
@@ -558,7 +1904,6 @@
 [U] https://www.sistemaetapa.com.br/plugin : Found!
 
 [U] https://www.sistemaetapa.com.br/platform : Found!
-
 [U] https://www.sistemaetapa.com.br/noneditable : Found!
 
 [U] https://www.sistemaetapa.com.br/mod_poll : Found!
@@ -1329,8 +2674,6 @@
 
 [U] https://www.sistemaetapa.com.br/Plugin : Found!
 
-[U] https://www.sistemaetapa.com.br/Net : Found!
-
 [U] https://www.sistemaetapa.com.br/Membership : Found!
 
 [U] https://www.sistemaetapa.com.br/Media : Found!
@@ -2013,6 +3356,8 @@
 
 [U] https://www.sistemaetapa.com.br/c4 : Found!
 
+[U] https://www.sistemaetapa.com.br/c3 : Found!
+
 [U] https://www.sistemaetapa.com.br/c2 : Found!
 
 [U] https://www.sistemaetapa.com.br/bugsbunny : Found!
@@ -2466,6 +3811,8 @@
 [U] https://www.sistemaetapa.com.br/mailto : Found!
 
 [U] https://www.sistemaetapa.com.br/mailman : Found!
+
+[U] https://www.sistemaetapa.com.br/mail_fetch : Found!
 
 [U] https://www.sistemaetapa.com.br/mag : Found!
 
