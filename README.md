@@ -7,6 +7,17 @@ informações e instalar ferramentas externas.
 
 ------------------------------------------------------------------------
 
+## 💀 Instala os requesitos, bobão
+
+    sudo apt install python3
+    sudo apt install python2
+    sudo apt install php
+    sudo apt update
+
+(se for no Termux cê substitui "sudo apt" por "pkg")
+
+------------------------------------------------------------------------
+
 ## 🐧 Instalação no Linux / Kali / Termux
 
     git clone https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git
