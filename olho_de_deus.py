@@ -4,9 +4,14 @@ import os
 from pathlib import Path
 import shutil
 
-# SETA O VERDÃO AQUI
+# SETA AS CORES AQUI
 VERDE = "\033[92m"
 VERDE_NEON = "\033[38;5;46m"
+VERMELHO = "\033[1;31m"
+MAGENTA = "\033[1;95m"
+AZUL = "\033[1;94m"
+CIANO = "\033[1;96m"
+VERMELHO-CLARO = "\033[1;91m"
 RESET = "\033[0m"
 
 print("\033[0;32m")
@@ -93,7 +98,7 @@ def reiniciar():
 # ==========================================
 print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + RESET)
 
-options = input("""
+options = input(VERMELHO + """
       [1] Informações de sites
       [2] Instalar ferramentas
       [3] Scan divino
@@ -102,20 +107,20 @@ options = input("""
       [6] Atualizar Painel
       [7] Teste de viadagem
       [8] Sair
-Escolha: """)
+Escolha: """ + RESET)
 
 # ==========================================
 # OPÇÃO 1 — INFO DE SITES
 # ==========================================
 if options == '1':
-    info = input("""
+    info = input(MAGENTA + """
 [1] Etapa.com
 [2] Hortolândia.gov
 [3] JusBrasil
 [4] Fundação CefetMinas
 [5] Voltar ao painel
 [6] Sair
-Escolha: """)
+Escolha: """ + RESET)
 
     if info == '1':
         subprocess.run(["cat", str(BASE_DIR / "INFO SITE ETAPA")])
@@ -150,7 +155,7 @@ Escolha: """)
 # ==========================================
 elif options == '2':
 
-    tool = input("""
+    tool = input(AZUL + """
 [1] RED HAWK
 [2] GAMKERS DDOS
 [3] MaxPhisher
@@ -159,7 +164,7 @@ elif options == '2':
 [6] Seeker (Abra outro terminal e cole o seguinte comando: 'ssh -R 80:localhost:8080 nokey@localhost.run')
 [7] Voltar ao painel
 [8] Sair
-Escolha: """)
+Escolha: """ + RESET)
 
     # RED HAWK
     if tool == '1':
@@ -223,7 +228,7 @@ elif options == '3':
 
     instalar_pacote("nmap")
 
-    escolha = input("""
+    escolha = input(CIANO + """
 O que desejas scanear, filho meu?
 
 [1] Ip (Agressivo)
@@ -231,7 +236,7 @@ O que desejas scanear, filho meu?
 [3] Scan de Vulnerabilidades (site)
 [4] Site (normal)
 [5] Sair
-Escolha: """)
+Escolha: """ + RESET)
 
     if escolha == '1':
         Ip = input('Qual IP deseja scanear? ')
@@ -293,10 +298,10 @@ Escolha: """)
 # OPÇÃO 7 - TESTE DE GAYZISSES
 # ==========================================
 elif options == '7':
-    gay = input("""
+    gay = input(VERMELHO-CLAR0 + """
             [1] O dev do code é gay?
             [2] Eu sou gay?
-            Escolha: """)
+            Escolha: """ + RESET)
 if gay == '1':
     print("Não. Ele é muito sigma, mais que você inclusive.")
 elif gay == '2':
@@ -310,6 +315,7 @@ else:
 # ==========================================
 if options == '8':
     exit()
+
 
 
 
