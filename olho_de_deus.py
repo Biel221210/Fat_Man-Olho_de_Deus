@@ -1,3 +1,4 @@
+import random
 import subprocess
 import os
 from pathlib import Path
@@ -99,7 +100,8 @@ options = input("""
       [4] Gerador de Pessoas
       [5] Gerador de CPF
       [6] Atualizar Painel
-      [7] Sair
+      [7] Teste de viadagem
+      [8] Sair
 Escolha: """)
 
 # ==========================================
@@ -288,9 +290,26 @@ Escolha: """)
         exit()
 
 # ==========================================
-# OPÇÃO 6 — SAIR
+# OPÇÃO 7 - TESTE DE GAYZISSES
 # ==========================================
 elif options == '7':
+    gay = input("""
+            [1] O dev do code é gay?
+            [2] Eu sou gay?
+            Escolha: """)
+if gay == '1':
+    print("Não. Ele é muito sigma, mais que você inclusive.")
+elif gay == '2':
+    respostas = ["Sim.", "Não.", "Talvez.", "Com certeza!", "De jeito nenhum."]
+    print(random.choice(respostas))
+else:
+    print("Opção inválida.")
+        
+# ==========================================
+# OPÇÃO 8 — SAIR
+# ==========================================
+elif options == '8':
     exit()
+
 
 
