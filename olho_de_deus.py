@@ -11,7 +11,7 @@ VERMELHO = "\033[1;31m"
 MAGENTA = "\033[1;95m"
 AZUL = "\033[1;94m"
 CIANO = "\033[1;96m"
-VERMELHO-CLARO = "\033[1;91m"
+VERMELHO2 = "\033[1;91m"
 RESET = "\033[0m"
 
 print("\033[0;32m")
@@ -298,7 +298,7 @@ Escolha: """)
 # OPÇÃO 7 - TESTE DE GAYZISSES
 # ==========================================
 elif options == '7':
-    gay = input(VERMELHO-CLAR0 + """
+    gay = input(VERMELHO2 + """
             [1] O dev do code é gay?
             [2] Eu sou gay?
             Escolha: """ + RESET)
@@ -315,6 +315,7 @@ else:
 # ==========================================
 if options == '8':
     exit()
+
 
 
 
