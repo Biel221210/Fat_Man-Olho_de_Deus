@@ -1,4 +1,5 @@
 VERMELHO = "\033[1;91m"
+RESET = "\033[0m"
 gay = input(VERMELHO + """
             [1] O dev do code é gay?
             [2] Eu sou gay?
