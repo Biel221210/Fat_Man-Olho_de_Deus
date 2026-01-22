@@ -1,3 +1,4 @@
+import random
 VERMELHO = "\033[1;91m"
 RESET = "\033[0m"
 gay = input(VERMELHO + """
