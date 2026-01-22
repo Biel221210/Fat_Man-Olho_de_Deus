@@ -330,7 +330,7 @@ elif gay == '2':
 else:
     print("Opção inválida.")
 
-saida = input("""
+    saida = input("""
 [1] Continuar no painel
 [2] Sair
 Escolha: """)
@@ -345,6 +345,7 @@ Escolha: """)
 # ==========================================
 if options == '8':
     exit()
+
 
 
 
