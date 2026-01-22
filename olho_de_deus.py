@@ -318,17 +318,7 @@ Escolha: """)
 # OPÇÃO 7 - TESTE DE GAYZISSES
 # ==========================================
 elif options == '7':
-    gay = input(VERMELHO2 + """
-            [1] O dev do code é gay?
-            [2] Eu sou gay?
-            Escolha: """ + RESET)
-if gay == '1':
-    print("Não. Ele é muito sigma, mais que você inclusive.")
-elif gay == '2':
-    respostas = ["Sim.", "Não.", "Talvez.", "Com certeza!", "De jeito nenhum."]
-    print(random.choice(respostas))
-else:
-    print("Opção inválida.")
+    subprocess.run(['python3', 'gay.py'])
 
     saida = input("""
 [1] Continuar no painel
@@ -345,6 +335,7 @@ Escolha: """)
 # ==========================================
 if options == '8':
     exit()
+
 
 
 
