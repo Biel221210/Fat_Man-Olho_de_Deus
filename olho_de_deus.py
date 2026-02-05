@@ -318,7 +318,7 @@ Escolha: """)
 # OPÇÃO 7 - TESTE DE GAYZISSES
 # ==========================================
 elif options == '7':
-    subprocess.run(['python3', 'gay.py'])
+    subprocess.run(['python3', 'gay_percent.py'])
 
     saida = input("""
 [1] Continuar no painel
@@ -335,6 +335,7 @@ Escolha: """)
 # ==========================================
 if options == '8':
     exit()
+
 
 
 
