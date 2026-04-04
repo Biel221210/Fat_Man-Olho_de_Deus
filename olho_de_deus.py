@@ -20,6 +20,8 @@ print("\033[0;32m")
 subprocess.run(['clear'])
 subprocess.run(['cat', 'art_ascii'], stderr=subprocess.DEVNULL)
 
+subprocess.run(['python3', 'senhaxx.py'])
+
 # ==========================================
 # CONFIG UNIVERSAL
 # ==========================================
