@@ -120,14 +120,21 @@ resultado = prompt(options)
 # OPÇÃO 1 — INFO DE SITES
 # ==========================================
 if resultado["options"] == '1':
-    info = input(MAGENTA + """
-[1] Etapa.com
-[2] Hortolândia.gov
-[3] JusBrasil
-[4] Fundação CefetMinas
-[5] Voltar ao painel
-[6] Sair
-Escolha: """ + RESET)
+    info = prompt([
+    {
+        "type": "list",
+        "message": "Escolha o site:",
+        "choices": [
+            {"name": "Etapa.com", "value": "1"},
+            {"name": "Hortolândia.gov", "value": "2"},
+            {"name": "JusBrasil", "value": "3"},
+            {"name": "Fundação CefetMinas", "value": "4"},
+            {"name": "Voltar ao painel", "value": "5"},
+            {"name": "Sair", "value": "6"},
+        ],
+        "name": "info"
+    }
+])["info"]
 
     if info == '1':
         subprocess.run(["cat", str(BASE_DIR / "INFO SITE ETAPA")])
@@ -147,10 +154,17 @@ Escolha: """ + RESET)
     elif info == '6':
         exit()
 
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
+    saida = prompt([
+    {
+        "type": "list",
+        "message": "O que deseja fazer?",
+        "choices": [
+            {"name": "Continuar no painel", "value": "1"},
+            {"name": "Sair", "value": "2"},
+        ],
+        "name": "saida"
+    }
+])["saida"]
 
     if saida == '1':
         reiniciar()
@@ -162,16 +176,23 @@ Escolha: """)
 # ==========================================
 elif resultado["options"] == '2':
 
-    tool = input(AZUL + """
-[1] RED HAWK
-[2] GAMKERS DDOS
-[3] MaxPhisher
-[4] TrackIP
-[5] Clownters.py
-[6] Seeker (Abra outro terminal e cole o seguinte comando: 'ssh -R 80:localhost:8080 nokey@localhost.run')
-[7] Voltar ao painel
-[8] Sair
-Escolha: """ + RESET)
+    tool = prompt([
+    {
+        "type": "list",
+        "message": "Escolha a ferramenta:",
+        "choices": [
+            {"name": "RED HAWK", "value": "1"},
+            {"name": "GAMKERS DDOS", "value": "2"},
+            {"name": "MaxPhisher", "value": "3"},
+            {"name": "TrackIP", "value": "4"},
+            {"name": "Clownters.py", "value": "5"},
+            {"name": "Seeker", "value": "6"},
+            {"name": "Voltar ao painel", "value": "7"},
+            {"name": "Sair", "value": "8"},
+        ],
+        "name": "tool"
+    }
+])["tool"]
 
     # RED HAWK
     if tool == '1':
@@ -218,10 +239,17 @@ Escolha: """ + RESET)
     elif tool == '8':
         exit()
 
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
+    saida = prompt([
+    {
+        "type": "list",
+        "message": "O que deseja fazer?",
+        "choices": [
+            {"name": "Continuar no painel", "value": "1"},
+            {"name": "Sair", "value": "2"},
+        ],
+        "name": "saida"
+    }
+])["saida"]
 
     if saida == '1':
         reiniciar()
@@ -235,15 +263,20 @@ elif resultado["options"] == '3':
 
     instalar_pacote("nmap")
 
-    escolha = input(CIANO + """
-O que desejas scanear, filho meu?
-
-[1] Ip (Agressivo)
-[2] Ip (Stealth)
-[3] Scan de Vulnerabilidades (site)
-[4] Site (normal)
-[5] Sair
-Escolha: """ + RESET)
+    escolha = prompt([
+    {
+        "type": "list",
+        "message": "O que desejas scanear?",
+        "choices": [
+            {"name": "IP (Agressivo)", "value": "1"},
+            {"name": "IP (Stealth)", "value": "2"},
+            {"name": "Scan de Vulnerabilidades", "value": "3"},
+            {"name": "Site (normal)", "value": "4"},
+            {"name": "Sair", "value": "5"},
+        ],
+        "name": "scan"
+    }
+])["scan"]
 
     if escolha == '1':
         Ip = input('Qual IP deseja scanear? ')
@@ -264,10 +297,17 @@ Escolha: """ + RESET)
     elif escolha == '5':
         exit()
 
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
+    saida = prompt([
+    {
+        "type": "list",
+        "message": "O que deseja fazer?",
+        "choices": [
+            {"name": "Continuar no painel", "value": "1"},
+            {"name": "Sair", "value": "2"},
+        ],
+        "name": "saida"
+    }
+])["saida"]
 
     if saida == '1':
         reiniciar()
@@ -280,10 +320,17 @@ Escolha: """)
 elif resultado["options"] == '4':
     subprocess.run(['python3', 'gerador de pessoas.py'])
     
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
+    saida = prompt([
+    {
+        "type": "list",
+        "message": "O que deseja fazer?",
+        "choices": [
+            {"name": "Continuar no painel", "value": "1"},
+            {"name": "Sair", "value": "2"},
+        ],
+        "name": "saida"
+    }
+])["saida"]
     
     if saida == '1':
         reiniciar()
@@ -296,11 +343,18 @@ Escolha: """)
 elif resultado["options"] == '5':
     subprocess.run(['python3', 'gerador de cpf.py'])
     
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-    
+    saida = prompt([
+    {
+        "type": "list",
+        "message": "O que deseja fazer?",
+        "choices": [
+            {"name": "Continuar no painel", "value": "1"},
+            {"name": "Sair", "value": "2"},
+        ],
+        "name": "saida"
+    }
+])["saida"]
+
     if saida == '1':
         reiniciar()
     else:
@@ -327,11 +381,18 @@ Escolha: """)
 elif resultado["options"] == '7':
     subprocess.run(['python3', 'gay_percent.py'])
 
-    saida = input("""
-[1] Continuar no painel
-[2] Sair
-Escolha: """)
-    
+    saida = prompt([
+    {
+        "type": "list",
+        "message": "O que deseja fazer?",
+        "choices": [
+            {"name": "Continuar no painel", "value": "1"},
+            {"name": "Sair", "value": "2"},
+        ],
+        "name": "saida"
+    }
+])["saida"]
+
     if saida == '1':
         reiniciar()
     else:
