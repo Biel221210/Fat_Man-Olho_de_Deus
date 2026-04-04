@@ -28,7 +28,7 @@ RESET = '\033[0m'
 senha = "220614"
 senha_confirmacao = getpass.getpass(f'senha: ')
 if senha == senha_confirmacao:
-    print(VERDE + 'Acesso concedido' + RESET)
+    print(VERDE + 'Acesso concedido' + VERDE)
 else:
     print(VERMELHO + 'Acesso negado' + RESET)
     sys.exit()
