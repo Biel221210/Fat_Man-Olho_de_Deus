@@ -29,7 +29,6 @@ senha = "220614"
 senha_confirmacao = getpass.getpass(f'senha: ')
 if senha == senha_confirmacao:
     print(VERDE + 'Acesso concedido' + RESET)
-    subprocess.run(['python3', 'olho_de_deus.py'])
 else:
     print(VERMELHO + 'Acesso negado' + RESET)
     sys.exit()
