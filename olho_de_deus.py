@@ -17,7 +17,6 @@ RESET = "\033[0m"
 
 print("\033[0;32m")
 
-# Tenta exibir ASCII inicial
 subprocess.run(['clear'])
 subprocess.run(['cat', 'art_ascii'], stderr=subprocess.DEVNULL)
 
@@ -27,10 +26,8 @@ subprocess.run(['cat', 'art_ascii'], stderr=subprocess.DEVNULL)
 BASE_DIR = Path.home() / "Fat_Man-Olho_de_Deus"
 BASE_DIR.mkdir(exist_ok=True)
 
-# Limpa tela
 subprocess.run(["clear"])
 
-# Mostra ASCII salvo na pasta
 ascii_path = BASE_DIR / "art_ascii"
 if ascii_path.exists():
     subprocess.run(["cat", str(ascii_path)])
@@ -39,48 +36,41 @@ if ascii_path.exists():
 # INSTALAÇÃO UNIVERSAL DE PACOTES
 # ==========================================
 def instalar_pacote(pacote):
-    # Termux (pkg)
+
     if shutil.which("pkg"):
-        print(f"Instalando {pacote} via pkg...")
         subprocess.run(["pkg", "install", "-y", pacote])
         return
 
-    # apt (Ubuntu, Debian, Kali etc)
     if shutil.which("apt"):
-        print(f"Instalando {pacote} via apt...")
         subprocess.run(["sudo", "apt", "update", "-y"])
         subprocess.run(["sudo", "apt", "install", "-y", pacote])
         return
 
-    # pacman (Arch, Manjaro)
     if shutil.which("pacman"):
-        print(f"Instalando {pacote} via pacman...")
         subprocess.run(["sudo", "pacman", "-Sy", pacote, "--noconfirm"])
         return
 
-    # dnf (Fedora)
     if shutil.which("dnf"):
-        print(f"Instalando {pacote} via dnf...")
         subprocess.run(["sudo", "dnf", "install", "-y", pacote])
         return
 
-    # yum (CentOS)
     if shutil.which("yum"):
-        print(f"Instalando {pacote} via yum...")
         subprocess.run(["sudo", "yum", "install", "-y", pacote])
         return
 
-    print(f"Não foi possível instalar o pacote {pacote}. Instale manualmente.")
+    print(f"Instale manualmente: {pacote}")
 
 # ==========================================
 # ATUALIZAR O REPOSITÓRIO DO PAINEL
 # ==========================================
 def atualizar_repo():
+
     if (BASE_DIR / ".git").exists():
-        print("Atualizando painel...")
+
         subprocess.run(["git", "pull"], cwd=BASE_DIR)
+
     else:
-        print("Repositório não encontrado. Clonando...")
+
         subprocess.run([
             "git", "clone",
             "https://github.com/Biel221210/Fat_Man-Olho_de_Deus.git",
@@ -88,328 +78,313 @@ def atualizar_repo():
         ])
 
 # ==========================================
-# FUNÇÃO DE REINICIAR O PAINEL
+# FUNÇÃO DE REINICIAR
 # ==========================================
 def reiniciar():
+
     subprocess.run(["python3", str(Path(__file__))])
     exit()
 
 # ==========================================
-# TELA PRINCIPAL
+# MENU PRINCIPAL
 # ==========================================
-options = [
+menu = prompt([
     {
         "type": "list",
         "message": "Escolha uma opção:",
-        "choices": ['1. Info de Sites', 
-                    '2. Ferramentas', 
-                    '3. Scan divino',
-                    '4. Gerador de Pessoas',
-                    '5. Gerador de CPF',
-                    '6. Atualizar Painel',
-                    '7. Teste de Gayzisses',
-                    '8. Sair'
-                    ],
-    "name": "options"
-    }
-]
-
-resultado = prompt(options)
-
-# ==========================================
-# OPÇÃO 1 — INFO DE SITES
-# ==========================================
-if resultado["options"] == '1':
-    info = prompt([
-    {
-        "type": "list",
-        "message": "Escolha o site:",
         "choices": [
-            {"name": "Etapa.com", "value": "1"},
-            {"name": "Hortolândia.gov", "value": "2"},
-            {"name": "JusBrasil", "value": "3"},
-            {"name": "Fundação CefetMinas", "value": "4"},
-            {"name": "Voltar ao painel", "value": "5"},
-            {"name": "Sair", "value": "6"},
+            {"name": "Info de Sites", "value": "1"},
+            {"name": "Ferramentas", "value": "2"},
+            {"name": "Scan divino", "value": "3"},
+            {"name": "Gerador de Pessoas", "value": "4"},
+            {"name": "Gerador de CPF", "value": "5"},
+            {"name": "Atualizar Painel", "value": "6"},
+            {"name": "Teste de Gayzisses", "value": "7"},
+            {"name": "Sair", "value": "8"},
         ],
-        "name": "info"
+        "name": "opcao"
     }
-])["info"]
+])["opcao"]
 
-    if info == '1':
+# ==========================================
+# INFO DE SITES
+# ==========================================
+if menu == "1":
+
+    info = prompt([
+        {
+            "type": "list",
+            "message": "Escolha o site:",
+            "choices": [
+                {"name": "Etapa.com", "value": "1"},
+                {"name": "Hortolândia.gov", "value": "2"},
+                {"name": "JusBrasil", "value": "3"},
+                {"name": "Fundação CefetMinas", "value": "4"},
+                {"name": "Voltar", "value": "5"},
+                {"name": "Sair", "value": "6"},
+            ],
+            "name": "info"
+        }
+    ])["info"]
+
+    if info == "1":
         subprocess.run(["cat", str(BASE_DIR / "INFO SITE ETAPA")])
 
-    elif info == '2':
+    elif info == "2":
         subprocess.run(["cat", str(BASE_DIR / "INFO PREFEITURA HORTOLANDIA")])
 
-    elif info == '3':
+    elif info == "3":
         subprocess.run(["cat", str(BASE_DIR / "INFO JUSBRASIL")])
 
-    elif info == '4':
+    elif info == "4":
         subprocess.run(["cat", str(BASE_DIR / "FUNDAÇÃO CEFETMINAS")])
 
-    elif info == '5':
+    elif info == "5":
         reiniciar()
 
-    elif info == '6':
+    elif info == "6":
         exit()
 
     saida = prompt([
-    {
-        "type": "list",
-        "message": "O que deseja fazer?",
-        "choices": [
-            {"name": "Continuar no painel", "value": "1"},
-            {"name": "Sair", "value": "2"},
-        ],
-        "name": "saida"
-    }
-])["saida"]
+        {
+            "type": "list",
+            "message": "O que deseja fazer?",
+            "choices": [
+                {"name": "Continuar no painel", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "saida"
+        }
+    ])["saida"]
 
-    if saida == '1':
+    if saida == "1":
         reiniciar()
-    else:
-        exit()
 
 # ==========================================
-# OPÇÃO 2 — FERRAMENTAS
+# FERRAMENTAS
 # ==========================================
-elif resultado["options"] == '2':
+elif menu == "2":
 
     tool = prompt([
-    {
-        "type": "list",
-        "message": "Escolha a ferramenta:",
-        "choices": [
-            {"name": "RED HAWK", "value": "1"},
-            {"name": "GAMKERS DDOS", "value": "2"},
-            {"name": "MaxPhisher", "value": "3"},
-            {"name": "TrackIP", "value": "4"},
-            {"name": "Clownters.py", "value": "5"},
-            {"name": "Seeker", "value": "6"},
-            {"name": "Voltar ao painel", "value": "7"},
-            {"name": "Sair", "value": "8"},
-        ],
-        "name": "tool"
-    }
-])["tool"]
+        {
+            "type": "list",
+            "message": "Escolha a ferramenta:",
+            "choices": [
+                {"name": "RED HAWK", "value": "1"},
+                {"name": "GAMKERS DDOS", "value": "2"},
+                {"name": "MaxPhisher", "value": "3"},
+                {"name": "TrackIP", "value": "4"},
+                {"name": "Clownters.py", "value": "5"},
+                {"name": "Seeker", "value": "6"},
+                {"name": "Voltar", "value": "7"},
+                {"name": "Sair", "value": "8"},
+            ],
+            "name": "tool"
+        }
+    ])["tool"]
 
-    # RED HAWK
-    if tool == '1':
+    if tool == "1":
         subprocess.run(["git", "clone", "https://github.com/Tuhinshubhra/RED_HAWK"], cwd=BASE_DIR)
         subprocess.run(["php", "rhawk.php"], cwd=BASE_DIR / "RED_HAWK")
 
-    # Gamkers DDOS
-    elif tool == '2':
+    elif tool == "2":
         instalar_pacote("python2")
         subprocess.run(["git", "clone", "https://github.com/gamkers/GAMKERS-DDOS.git"], cwd=BASE_DIR)
         subprocess.run(["python2", "GAMKERS-DDOS.py"], cwd=BASE_DIR / "GAMKERS-DDOS")
 
-    # MaxPhisher
-    elif tool == '3':
+    elif tool == "3":
         subprocess.run("pip install pipx", shell=True)
         subprocess.run("pipx ensurepath", shell=True)
         subprocess.run("pipx install maxphisher", shell=True)
         subprocess.run("maxphisher", shell=True)
 
-    # Track IP
-    elif tool == '4':
+    elif tool == "4":
         instalar_pacote("git")
         instalar_pacote("curl")
         subprocess.run(["git", "clone", "https://github.com/htr-tech/track-ip.git"], cwd=BASE_DIR)
         subprocess.run(["bash", "trackip"], cwd=BASE_DIR / "track-ip")
 
-    # Clownters
-    elif tool == '5':
+    elif tool == "5":
         instalar_pacote("git")
         instalar_pacote("python2")
         subprocess.run(['git', 'clone', 'https://github.com/mike90s15/Clownters.py'], cwd=BASE_DIR)
         subprocess.run(['bash', 'install.sh'], cwd=BASE_DIR / 'Clownters.py')
 
-        # Seeker
-    elif tool == '6':
+    elif tool == "6":
         subprocess.run(['git', 'clone', 'https://github.com/thewhiteh4t/seeker.git'], cwd=BASE_DIR)
         subprocess.run(['chmod', '+x', 'install.sh'], cwd=BASE_DIR / 'seeker')
         subprocess.run(['./install.sh'], cwd=BASE_DIR / 'seeker')
         subprocess.run(['python3', 'seeker.py'], cwd=BASE_DIR / 'seeker')
 
-    elif tool == '7':
+    elif tool == "7":
         reiniciar()
 
-    elif tool == '8':
+    elif tool == "8":
         exit()
 
     saida = prompt([
-    {
-        "type": "list",
-        "message": "O que deseja fazer?",
-        "choices": [
-            {"name": "Continuar no painel", "value": "1"},
-            {"name": "Sair", "value": "2"},
-        ],
-        "name": "saida"
-    }
-])["saida"]
+        {
+            "type": "list",
+            "message": "Continuar?",
+            "choices": [
+                {"name": "Sim", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "saida"
+        }
+    ])["saida"]
 
-    if saida == '1':
+    if saida == "1":
         reiniciar()
-    else:
-        exit()
 
 # ==========================================
-# OPÇÃO 3 — SCAN DIVINO (NMAP)
+# SCAN DIVINO
 # ==========================================
-elif resultado["options"] == '3':
+elif menu == "3":
 
     instalar_pacote("nmap")
 
     escolha = prompt([
-    {
-        "type": "list",
-        "message": "O que desejas scanear?",
-        "choices": [
-            {"name": "IP (Agressivo)", "value": "1"},
-            {"name": "IP (Stealth)", "value": "2"},
-            {"name": "Scan de Vulnerabilidades", "value": "3"},
-            {"name": "Site (normal)", "value": "4"},
-            {"name": "Sair", "value": "5"},
-        ],
-        "name": "scan"
-    }
-])["scan"]
+        {
+            "type": "list",
+            "message": "O que deseja scanear?",
+            "choices": [
+                {"name": "IP agressivo", "value": "1"},
+                {"name": "IP stealth", "value": "2"},
+                {"name": "Scan vulnerabilidades", "value": "3"},
+                {"name": "Site normal", "value": "4"},
+                {"name": "Sair", "value": "5"},
+            ],
+            "name": "scan"
+        }
+    ])["scan"]
 
-    if escolha == '1':
-        Ip = input('Qual IP deseja scanear? ')
+    if escolha == "1":
+        Ip = input("IP: ")
         subprocess.run(['nmap', '-A', Ip])
 
-    elif escolha == '2':
-        Ip = input('Qual IP deseja scanear? ')
+    elif escolha == "2":
+        Ip = input("IP: ")
         subprocess.run(['nmap', '-sS', Ip])
 
-    elif escolha == '3':
-        site = input('Qual site você deseja scanear? ')
+    elif escolha == "3":
+        site = input("Site: ")
         subprocess.run(['nmap', '--script', 'vuln', site])
 
-    elif escolha == '4':
-        site = input('Qual site deseja scanear? ')
+    elif escolha == "4":
+        site = input("Site: ")
         subprocess.run(['nmap', site])
 
-    elif escolha == '5':
+    elif escolha == "5":
         exit()
 
     saida = prompt([
-    {
-        "type": "list",
-        "message": "O que deseja fazer?",
-        "choices": [
-            {"name": "Continuar no painel", "value": "1"},
-            {"name": "Sair", "value": "2"},
-        ],
-        "name": "saida"
-    }
-])["saida"]
+        {
+            "type": "list",
+            "message": "Continuar?",
+            "choices": [
+                {"name": "Sim", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "saida"
+        }
+    ])["saida"]
 
-    if saida == '1':
+    if saida == "1":
         reiniciar()
-    else:
-        exit()
 
-# =========================================
-# OPÇÃO 4 - GERADOR DE PESSOAS
-# =========================================
-elif resultado["options"] == '4':
+# ==========================================
+# GERADOR DE PESSOAS
+# ==========================================
+elif menu == "4":
+
     subprocess.run(['python3', 'gerador de pessoas.py'])
-    
-    saida = prompt([
-    {
-        "type": "list",
-        "message": "O que deseja fazer?",
-        "choices": [
-            {"name": "Continuar no painel", "value": "1"},
-            {"name": "Sair", "value": "2"},
-        ],
-        "name": "saida"
-    }
-])["saida"]
-    
-    if saida == '1':
-        reiniciar()
-    else:
-        exit()
 
-# =========================================
-# OPÇÃO 5 - GERADOR DE PESSOAS
-# =========================================
-elif resultado["options"] == '5':
+    saida = prompt([
+        {
+            "type": "list",
+            "message": "Continuar?",
+            "choices": [
+                {"name": "Sim", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "saida"
+        }
+    ])["saida"]
+
+    if saida == "1":
+        reiniciar()
+
+# ==========================================
+# GERADOR DE CPF
+# ==========================================
+elif menu == "5":
+
     subprocess.run(['python3', 'gerador de cpf.py'])
-    
+
     saida = prompt([
-    {
-        "type": "list",
-        "message": "O que deseja fazer?",
-        "choices": [
-            {"name": "Continuar no painel", "value": "1"},
-            {"name": "Sair", "value": "2"},
-        ],
-        "name": "saida"
-    }
-])["saida"]
+        {
+            "type": "list",
+            "message": "Continuar?",
+            "choices": [
+                {"name": "Sim", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "saida"
+        }
+    ])["saida"]
 
-    if saida == '1':
+    if saida == "1":
         reiniciar()
-    else:
-        exit()
 
 # ==========================================
-# OPÇÃO 6 — ATUALIZAR PAINEL
+# ATUALIZAR
 # ==========================================
-elif resultado["options"] == '6':
-    atualizar = input("""
-[1] Atualizar o painel
-[2] Sair
-Escolha: """)
+elif menu == "6":
 
-    if atualizar == '1':
+    atualizar = prompt([
+        {
+            "type": "list",
+            "message": "Atualizar painel?",
+            "choices": [
+                {"name": "Sim", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "update"
+        }
+    ])["update"]
+
+    if atualizar == "1":
+
         atualizar_repo()
+
         reiniciar()
-    else:
-        exit()
 
 # ==========================================
-# OPÇÃO 7 - TESTE DE GAYZISSES
+# TESTE
 # ==========================================
-elif resultado["options"] == '7':
+elif menu == "7":
+
     subprocess.run(['python3', 'gay_percent.py'])
 
     saida = prompt([
-    {
-        "type": "list",
-        "message": "O que deseja fazer?",
-        "choices": [
-            {"name": "Continuar no painel", "value": "1"},
-            {"name": "Sair", "value": "2"},
-        ],
-        "name": "saida"
-    }
-])["saida"]
+        {
+            "type": "list",
+            "message": "Continuar?",
+            "choices": [
+                {"name": "Sim", "value": "1"},
+                {"name": "Sair", "value": "2"},
+            ],
+            "name": "saida"
+        }
+    ])["saida"]
 
-    if saida == '1':
+    if saida == "1":
         reiniciar()
-    else:
-        exit()
 
 # ==========================================
-# OPÇÃO 8 — SAIR
+# SAIR
 # ==========================================
-if resultado["options"] == '8':
+elif menu == "8":
+
     exit()
-
-
-
-
-
-
-
-
-
-
