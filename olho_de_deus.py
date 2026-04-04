@@ -3,6 +3,7 @@ import subprocess
 import os
 from pathlib import Path
 import shutil
+from InquirerPy import prompt
 
 # SETA AS CORES AQUI
 VERDE = "\033[92m"
@@ -19,19 +20,6 @@ print("\033[0;32m")
 # Tenta exibir ASCII inicial
 subprocess.run(['clear'])
 subprocess.run(['cat', 'art_ascii'], stderr=subprocess.DEVNULL)
-
-import getpass
-import sys
-VERDE = '\033[32m'
-VERMELHO = '\033[31m'
-RESET = '\033[0m'
-senha = "220614"
-senha_confirmacao = getpass.getpass(f'senha: ')
-if senha == senha_confirmacao:
-    print(VERDE + 'Acesso concedido' + VERDE)
-else:
-    print(VERMELHO + 'Acesso negado' + RESET)
-    sys.exit()
 
 # ==========================================
 # CONFIG UNIVERSAL
@@ -109,23 +97,29 @@ def reiniciar():
 # ==========================================
 # TELA PRINCIPAL
 # ==========================================
-print(VERDE_NEON + "Olá meu filho. Diga, o que queres?" + RESET)
+options = [
+    {
+        "type": "list",
+        "message": "Escolha uma opção:",
+        "choices": ['1. Info de Sites', 
+                    '2. Ferramentas', 
+                    '3. Scan divino',
+                    '4. Gerador de Pessoas',
+                    '5. Gerador de CPF',
+                    '6. Atualizar Painel',
+                    '7. Teste de Gayzisses',
+                    '8. Sair'
+                    ],
+    "name": "options"
+    }
+]
 
-options = input(VERMELHO + """
-      [1] Informações de sites
-      [2] Instalar ferramentas
-      [3] Scan divino
-      [4] Gerador de Pessoas
-      [5] Gerador de CPF
-      [6] Atualizar Painel
-      [7] Teste de viadagem
-      [8] Sair
-Escolha: """ + RESET)
+resultado = prompt(options)
 
 # ==========================================
 # OPÇÃO 1 — INFO DE SITES
 # ==========================================
-if options == '1':
+if resultado["options"] == '1':
     info = input(MAGENTA + """
 [1] Etapa.com
 [2] Hortolândia.gov
@@ -166,7 +160,7 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 2 — FERRAMENTAS
 # ==========================================
-elif options == '2':
+elif resultado["options"] == '2':
 
     tool = input(AZUL + """
 [1] RED HAWK
@@ -237,7 +231,7 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 3 — SCAN DIVINO (NMAP)
 # ==========================================
-elif options == '3':
+elif resultado["options"] == '3':
 
     instalar_pacote("nmap")
 
@@ -283,7 +277,7 @@ Escolha: """)
 # =========================================
 # OPÇÃO 4 - GERADOR DE PESSOAS
 # =========================================
-elif options == '4':
+elif resultado["options"] == '4':
     subprocess.run(['python3', 'gerador de pessoas.py'])
     
     saida = input("""
@@ -299,7 +293,7 @@ Escolha: """)
 # =========================================
 # OPÇÃO 5 - GERADOR DE PESSOAS
 # =========================================
-elif options == '5':
+elif resultado["options"] == '5':
     subprocess.run(['python3', 'gerador de cpf.py'])
     
     saida = input("""
@@ -315,7 +309,7 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 6 — ATUALIZAR PAINEL
 # ==========================================
-elif options == '6':
+elif resultado["options"] == '6':
     atualizar = input("""
 [1] Atualizar o painel
 [2] Sair
@@ -330,7 +324,7 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 7 - TESTE DE GAYZISSES
 # ==========================================
-elif options == '7':
+elif resultado["options"] == '7':
     subprocess.run(['python3', 'gay_percent.py'])
 
     saida = input("""
@@ -346,7 +340,7 @@ Escolha: """)
 # ==========================================
 # OPÇÃO 8 — SAIR
 # ==========================================
-if options == '8':
+if resultado["options"] == '8':
     exit()
 
 
