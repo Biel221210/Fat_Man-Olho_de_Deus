@@ -120,8 +120,9 @@ if menu == "1":
                 {"name": "Hortolândia.gov", "value": "2"},
                 {"name": "JusBrasil", "value": "3"},
                 {"name": "Fundação CefetMinas", "value": "4"},
-                {"name": "Voltar", "value": "5"},
-                {"name": "Sair", "value": "6"},
+                {"name": "Gov.br", "value": "5"},
+                {"name": "Voltar", "value": "6"},
+                {"name": "Sair", "value": "7"},
             ],
             "name": "info"
         }
@@ -140,9 +141,12 @@ if menu == "1":
         subprocess.run(["cat", str(BASE_DIR / "FUNDAÇÃO CEFETMINAS")])
 
     elif info == "5":
-        reiniciar()
+        subprocess.run(["cat", str(BASE_DIR / "GOV.BR")])
 
     elif info == "6":
+        reiniciar()
+
+    elif info == "7":
         exit()
 
     saida = prompt([
