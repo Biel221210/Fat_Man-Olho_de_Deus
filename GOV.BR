@@ -1,0 +1,781 @@
+B A S I C   I N F O
+====================
+
+
+[+] Site Title: GOV.BR
+[+] IP address: 161.148.164.31
+[+] Web Server: Could Not Detect
+[+] CMS: Could Not Detect
+[+] Cloudflare: Not Detected
+[+] Robots File: Found
+
+-------------[ contents ]----------------
+Sitemap: https://www.gov.br/sitemap.xml.gz
+
+# Define access-restrictions for robots/spiders
+# http://www.robotstxt.org/wc/norobots.html
+
+# By default we allow robots to access all areas of our site
+# already accessible to anonymous users
+
+User-agent: Yandex
+Disallow: /ebserh
+Disallow: /mre
+
+# Add Googlebot-specific syntax extension to exclude forms
+# that are repeated for each piece of content in the site
+# the wildcard is only supported by Googlebot
+# http://www.google.com/support/webmasters/bin/answer.py?answer=40367&ctx=sibling
+
+# User-Agent: Googlebot
+
+User-Agent: *
+Disallow: /economia/pt-br/internet/*
+Disallow: /*sendto_form$
+Disallow: /*folder_factories$
+Disallow: /ebserh/*?
+Disallow: /ebserh/*atct_album_view$
+Disallow: /ebserh/*folder_summary_view$
+Disallow: /ebserh/*login_form$
+Disallow: /ebserh/*mail_password_form$
+Disallow: /ebserh/@@search
+Disallow: /ebserh/*search_rss$
+Disallow: /ebserh/*summary_view$
+Disallow: /ebserh/*thumbnail_view$
+Disallow: /ebserh/*view$
+Disallow: /ebserh/*@@download/file$
+Disallow: /ebserh/*portal_javascripts*
+Disallow: /ebserh/*portal_css*
+Disallow: /ebserh/*++theme++*
+Disallow: /ebserh/*++resource++*
+Disallow: /ebserh/*@@configuracoes_view*
+Disallow: /ebserh/*.css$
+Disallow: /ebserh/*.gif$
+Disallow: /ebserh/*.jpeg$
+Disallow: /ebserh/*.jpg$
+Disallow: /ebserh/*.JPG$
+Disallow: /ebserh/*.js$
+Disallow: /ebserh/*.pdf$
+Disallow: /ebserh/*.png$
+Disallow: /ebserh/*.zip$
+Disallow: /mre/*?
+Disallow: /mre/*atct_album_view$
+Disallow: /mre/*folder_summary_view$
+Disallow: /mre/*login_form$
+Disallow: /mre/*mail_password_form$
+Disallow: /mre/@@search
+Disallow: /mre/*search_rss$
+Disallow: /mre/*summary_view$
+Disallow: /mre/*thumbnail_view$
+Disallow: /mre/*view$
+Disallow: /mre/*@@download/file$
+Disallow: /mre/*portal_javascripts*
+Disallow: /mre/*portal_css*
+Disallow: /mre/*++theme++*
+Disallow: /mre/*++resource++*
+Disallow: /mre/*@@configuracoes_view*
+Disallow: /mre/*.css$
+Disallow: /mre/*.gif$
+Disallow: /mre/*.jpeg$
+Disallow: /mre/*.jpg$
+Disallow: /mre/*.JPG$
+Disallow: /mre/*.js$
+Disallow: /mre/*.pdf$
+Disallow: /mre/*.png$
+Disallow: /mre/*.zip$
+-----------[end of contents]-------------
+
+
+
+W H O I S   L O O K U P
+========================
+
+        error valid key required
+
+
+
+G E O  I P  L O O K  U P
+=========================
+
+[i] IP: 161.148.164.31
+[i] Country: Brazil
+[i] State: N/A
+[i] City: None
+[i] Latitude: -22.8305
+[i] Longitude: -43.2192
+
+
+
+
+H T T P   H E A D E R S
+=======================
+
+
+[i]  HTTP/1.1 301 Moved Permanently
+[i]  Date: Sun, 26 Apr 2026 22:21:55 GMT
+[i]  Content-Length: 0
+[i]  X-Cache-Operation: plone.app.caching.moderateCaching
+[i]  Expires: Thu, 28 Apr 2016 22:21:55 GMT
+[i]  Vary: X-Anonymous
+[i]  Location: https://www.gov.br/pt-br
+[i]  X-Cache-Rule: plone.content.folderView
+[i]  X-Frame-Options: DENY
+[i]  X-Cache-Rule-B: moved_permanently
+[i]  cache-control: max-age=10, s-maxage=0, must-revalidate
+[i]  X-Varnish: 127027392 126244388
+[i]  Age: 2476
+[i]  Via: 1.1 varnish (Varnish/6.0)
+[i]  X-Cache: HIT
+[i]  Via: 1.1 www.gov.br
+[i]  X-Content-Type-Options: nosniff
+[i]  X-XSS-Protection: 1
+[i]  Referrer-Policy: strict-origin-when-cross-origin
+[i]  Strict-Transport-Security: max-age=31536000; includeSubDomains
+[i]  Content-Security-Policy: frame-ancestors 'self';
+[i]  Connection: close
+[i]  HTTP/1.1 200 OK
+[i]  Date: Sun, 26 Apr 2026 22:52:50 GMT
+[i]  Content-Length: 136007
+[i]  X-Tile-Url: https://www.gov.br/pt-br/pagina-inicial/@@collective.cover.banner/f43eb4e0-957f-4c44-ac33-01276ac4b9f5
+[i]  X-Cache-Operation: plone.app.caching.moderateCaching
+[i]  X-Robots-Tag: noimageindex
+[i]  Content-Language: pt-br
+[i]  Expires: Thu, 28 Apr 2016 22:52:50 GMT
+[i]  Vary: X-Anonymous,Accept-Encoding
+[i]  X-Ua-Compatible: IE=edge
+[i]  X-Cache-Rule: plone.content.folderView
+[i]  X-Frame-Options: DENY
+[i]  Content-Type: text/html;charset=utf-8
+[i]  cache-control: max-age=10, s-maxage=0, must-revalidate
+[i]  X-VCL-Version: 2.1.0
+[i]  X-Varnish: 119965020 119901543
+[i]  Via: 1.1 varnish (Varnish/6.0)
+[i]  X-Cache: HIT
+[i]  X-Varnish-Age: 621
+[i]  Age: 0
+[i]  Accept-Ranges: bytes
+[i]  Via: 1.1 www.gov.br
+[i]  X-Content-Type-Options: nosniff
+[i]  X-XSS-Protection: 1
+[i]  Referrer-Policy: strict-origin-when-cross-origin
+[i]  Strict-Transport-Security: max-age=31536000; includeSubDomains
+[i]  Content-Security-Policy: frame-ancestors 'self';
+[i]  Connection: close
+
+
+
+
+D N S   L O O K U P
+===================
+
+A : 161.148.164.31
+AAAA : 2804:151:3:2:161:148:164:31
+MX : 0 .
+NS : a.dns.br.
+NS : e.dns.br.
+NS : d.dns.br.
+NS : c.dns.br.
+NS : b.dns.br.
+NS : f.dns.br.
+TXT : v=spf1 -all
+SOA : a.dns.br. hostmaster.registro.br. 2026116552 1800 900 604800 900
+
+
+
+S U B N E T   C A L C U L A T I O N
+====================================
+
+Address       = 161.148.164.31
+Network       = 161.148.164.31/32
+Netmask       = 255.255.255.255
+Broadcast     = 161.148.164.31
+Wildcard Mask = 0.0.0.0
+Hosts Bits    = 0
+Max. Hosts    = 1
+Host Range    = 161.148.164.32 - 161.148.164.30
+IP Class      = B
+CIDR Notation = 161.148.164.31/32
+IP Version    = IPv4
+Is Private    = No
+DNS Hostname  = No hostname found
+
+
+
+N M A P   P O R T   S C A N
+============================
+
+error valid key required
+
+
+S U B - D O M A I N   F I N D E R
+==================================
+
+
+[i] Total Subdomains Found : 50
+
+[+] Subdomain: a2000.gov.br
+[-] IP: 161.148.173.104
+
+[+] Subdomain: www.a2000.gov.br
+[-] IP: 161.148.173.104
+
+[+] Subdomain: abc.gov.br
+[-] IP: 201.36.109.96
+
+[+] Subdomain: autodiscover.abc.gov.br
+[-] IP: 189.85.94.89
+
+[+] Subdomain: dns1.abc.gov.br
+[-] IP: 201.36.109.113
+
+[+] Subdomain: mailmx.abc.gov.br
+[-] IP: 201.36.109.91
+
+[+] Subdomain: ocid.abc.gov.br
+[-] IP: 189.9.52.74
+
+[+] Subdomain: www.abc.gov.br
+[-] IP: 201.36.109.96
+
+[+] Subdomain: abcd.gov.br
+[-] IP: 200.198.205.25
+
+[+] Subdomain: antigo.abcd.gov.br
+[-] IP: 200.198.205.25
+
+[+] Subdomain: dns1.abcd.gov.br
+[-] IP: 200.198.205.37
+
+[+] Subdomain: dns2.abcd.gov.br
+[-] IP: 200.198.205.38
+
+[+] Subdomain: dns3.abcd.gov.br
+[-] IP: 200.198.205.21
+
+[+] Subdomain: webmail.abcd.gov.br
+[-] IP: 200.198.205.26
+
+[+] Subdomain: www.abcd.gov.br
+[-] IP: 200.198.205.25
+
+[+] Subdomain: www2.abcd.gov.br
+[-] IP: 200.198.205.25
+
+[+] Subdomain: abgf.gov.br
+[-] IP: 104.26.9.66
+
+[+] Subdomain: mpme.abgf.gov.br
+[-] IP: 172.67.177.171
+
+[+] Subdomain: www.abgf.gov.br
+[-] IP: 172.67.177.171
+
+[+] Subdomain: abs.abin.gov.br
+[-] IP: 200.198.220.6
+
+[+] Subdomain: asa.abin.gov.br
+[-] IP: 200.198.220.2
+
+[+] Subdomain: correio.abin.gov.br
+[-] IP: 200.198.220.6
+
+[+] Subdomain: dns1.abin.gov.br
+[-] IP: 200.198.220.23
+
+[+] Subdomain: dns2.abin.gov.br
+[-] IP: 200.198.220.24
+
+[+] Subdomain: esintvirtual.abin.gov.br
+[-] IP: 172.233.11.247
+
+[+] Subdomain: misp.abin.gov.br
+[-] IP: 45.171.100.26
+
+[+] Subdomain: mx01.abin.gov.br
+[-] IP: 200.198.220.7
+
+[+] Subdomain: mx02.abin.gov.br
+[-] IP: 200.198.220.17
+
+[+] Subdomain: pcad.abin.gov.br
+[-] IP: 200.198.220.8
+
+[+] Subdomain: pcad1.abin.gov.br
+[-] IP: 200.198.220.11
+
+[+] Subdomain: rbi.abin.gov.br
+[-] IP: 5.161.115.26
+
+[+] Subdomain: www.abin.gov.br
+[-] IP: 200.198.220.6
+
+[+] Subdomain: abrasil.gov.br
+[-] IP: 200.198.196.163
+
+[+] Subdomain: atend.abrasil.gov.br
+[-] IP: 161.148.9.250
+
+[+] Subdomain: ftp.abrasil.gov.br
+[-] IP: 161.148.9.250
+
+[+] Subdomain: noticias.abrasil.gov.br
+[-] IP: 161.148.9.250
+
+[+] Subdomain: ac.gov.br
+[-] IP: 186.219.247.202
+
+[+] Subdomain: ac-jus.gov.br
+[-] IP: 201.49.156.113
+
+[+] Subdomain: curio.ac-jus.gov.br
+[-] IP: 201.49.156.3
+
+[+] Subdomain: curio01.ac-jus.gov.br
+[-] IP: 201.49.156.10
+
+[+] Subdomain: peba.ac-jus.gov.br
+[-] IP: 201.49.156.2
+
+[+] Subdomain: www.ac-jus.gov.br
+[-] IP: 201.49.156.113
+
+[+] Subdomain: api-pge.a5pv3z8hecm6qukrysjnbx.ac.gov.br
+[-] IP: 186.219.247.146
+
+[+] Subdomain: acl.ac.gov.br
+[-] IP: 187.110.155.120
+
+[+] Subdomain: acrecompra.ac.gov.br
+[-] IP: 149.78.122.98
+
+[+] Subdomain: www.acrecompra.ac.gov.br
+[-] IP: 149.78.122.98
+
+[+] Subdomain: acrelandia.ac.gov.br
+[-] IP: 185.230.63.107
+
+[+] Subdomain: en.acrelandia.ac.gov.br
+[-] IP: 34.149.87.45
+
+[+] Subdomain: www.acrelandia.ac.gov.br
+[-] IP: 34.149.87.45
+
+[+] Subdomain: acreprevidencia.ac.gov.br
+[-] IP: 187.110.154.14
+
+
+
+
+
+R E V E R S E   I P   L O O K U P
+==================================
+
+
+[i] Total Sites Found On This Server : 0
+
+
+
+
+
+S Q L   V U L N E R A B I L I T Y   S C A N N E R
+===================================================
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_cidadaos
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_empresas
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_orgaos
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_outros
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_servidor
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=imposto de renda
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=assinatura
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=inss
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=mei
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=Simples Nacional
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=imposto de renda
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=assinatura
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/search?origem=termos&SearchableText=inss
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/declarar-meu-imposto-de-renda?origem=maisacessado_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/assinatura-eletronica?origem=maisacessado_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/consultar-meu-imposto-de-renda?origem=maisacessado_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/consultar-dados-do-cadastro-unico-cadunico?origem=maisacessado_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/consultar-cadastro-de-pessoas-fisicas?origem=maisacessado_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/consultar-restituicao-de-imposto-de-renda?origem=maisacessado_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/cadastrar-caes-e-gatos?origem=destaque_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/realizar-inscricao-no-concurso-publico-nacional-unificado?origem=destaque_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/consultar-dados-de-imoveis-rurais-na-plataforma-meu-imovel-rural?origem=destaque_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/comunicar-roubo-furto-de-aparelho-pelo-aplicativo-celular-seguro?origem=destaque_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/fazer-o-exame-nacional-do-ensino-medio?origem=destaque_home
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/secom/pt-br/ta-na-mao?utm_source=whatsapp&utm_medium=social&utm_campaign=banner_gov.br
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/secom/pt-br/ta-na-mao?utm_source=whatsapp&utm_medium=social&utm_campaign=banner_gov.br
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=agricultura-e-pecuaria
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=assistencia-social
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=ciencia-e-tecnologia
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=comunicacoes-e-transparencia-publica
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=cultura-artes-historia-e-esportes
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=forcas-armadas-e-defesa-civil
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=educacao-e-pesquisa
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=empresa-industria-e-comercio
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=energia-minerais-e-combustiveis
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=financas-impostos-e-gestao-publica
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=justica-e-seguranca
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=meio-ambiente-e-clima
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=saude-e-vigilancia-sanitaria
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=trabalho-e-previdencia
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=transito-e-transportes
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/categorias?id=viagens-e-turismo
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://play.google.com/store/apps/details?id=br.gov.datasus.cnsdigital
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://play.google.com/store/apps/details?id=br.gov.meugovbr&hl=pt_BR
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://play.google.com/store/apps/details?id=br.gov.serpro.cnhe
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://falabr.cgu.gov.br/web/manifestacao/criar?tipo=1
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://falabr.cgu.gov.br/web/manifestacao/criar?tipo=5
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://falabr.cgu.gov.br/web/manifestacao/criar?tipo=3
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://falabr.cgu.gov.br/web/manifestacao/criar?tipo=2
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_cidadaos
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_empresas
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_orgaos
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_outros
+ [-] Searching For SQL Errors:  Not Found
+
+
+ [#] https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_servidor
+ [-] Searching For SQL Errors:  Not Found
+
+
+
+ [+] URL(s) With Parameter(s):54
+
+
+
+C R A W L E R
+=============
+
+
+Crawling Types & Descriptions:
+
+69: This is the lite version of tge crawler, This will show you the files which returns the http code '200'. This is time efficient and less messy.
+
+420: This is a little advance one it will show you all the list of files with their http code other then the badboy 404. This is a little messier but informative
+
+Select Crawler Type (69/420): 420
+
+         -[ A D V A N C E   C R A W L I N G ]-
+
+
+
+ Loading Crawler File ....
+
+[-] Admin Crawler File Found! Scanning For Admin Pannel [-]
+
+URLs Loaded: 817
+
+
+
+[U] https://www.gov.br/siteadmin/login.php : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/index.php : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.html : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.asp : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/index.asp : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.html : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.cfm : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/index.cfm : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.html : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.js : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/index.js : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.html : HTTP Response: 403
+
+[U] https://www.gov.br/login.js : Found!
+
+[U] https://www.gov.br/siteadmin/login.cgi : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/index.cgi : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.html : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin/login.html : HTTP Response: 403
+
+[U] https://www.gov.br/admincontrol.html
+ : HTTP Response: 0
+[-] Backup Crawler File Found! Scanning For Site Backups [-]
+
+URLs Loaded: 1
+
+
+
+[U] https://www.gov.br/ : HTTP Response: 301
+[-] General Crawler File Found! Crawling The Site [-]
+
+URLs Loaded: 1837
+
+
+
+[U] https://www.gov.br/langs : Found!
+
+[U] https://www.gov.br/themes : Found!
+
+[U] https://www.gov.br/en : HTTP Response: 302
+
+[U] https://www.gov.br/plugins : Found!
+
+[U] https://www.gov.br/error_log : HTTP Response: 302
+
+[U] https://www.gov.br/search : Found!
+
+[U] https://www.gov.br/fr : Found!
+
+[U] https://www.gov.br/de : Found!
+
+[U] https://www.gov.br/utils : Found!
+
+[U] https://www.gov.br/login : Found!
+
+[U] https://www.gov.br/table : HTTP Response: 500
+
+[U] https://www.gov.br/index : HTTP Response: 403
+
+[U] https://www.gov.br/error : HTTP Response: 302
+
+[U] https://www.gov.br/apps : HTTP Response: 302
+
+[U] https://www.gov.br/etc : Found!
+
+[U] https://www.gov.br/es : HTTP Response: 302
+
+[U] https://www.gov.br/manage : HTTP Response: 302
+
+[U] https://www.gov.br/contact : HTTP Response: 403
+
+[U] https://www.gov.br/actions : Found!
+
+[U] https://www.gov.br/video : Found!
+
+[U] https://www.gov.br/register : HTTP Response: 403
+
+[U] https://www.gov.br/theme : Found!
+
+[U] https://www.gov.br/HEAD : Found!
+
+[U] https://www.gov.br/base : HTTP Response: 500
+
+[U] https://www.gov.br/audio : Found!
+
+[U] https://www.gov.br/view : HTTP Response: 301
+
+[U] https://www.gov.br/design : HTTP Response: 302
+
+[U] https://www.gov.br/skin : Found!
+
+[U] https://www.gov.br/pattemplate : HTTP Response: 403
+
+[U] https://www.gov.br/siteadmin : HTTP Response: 403
+
+[U] https://www.gov.br/sales : HTTP Response: 403
+
+[U] https://www.gov.br/registry : HTTP Response: 403
+
+[U] https://www.gov.br/mnet : HTTP Response: 403
+
+[U] https://www.gov.br/jscalendar : Found!
+
+[U] https://www.gov.br/index.cgi : HTTP Response: 403
+
+[U] https://www.gov.br/index.cfm : HTTP Response: 403
+
+[U] https://www.gov.br/clientes : Found!
+
+[U] https://www.gov.br/bn : HTTP Response: 301
+
+[U] https://www.gov.br/site : HTTP Response: 403
+
+[U] https://www.gov.br/patTemplate : HTTP Response: 403
+
+[U] https://www.gov.br/edit : HTTP Response: 302
+
+[U] https://www.gov.br/captcha : Found!
+
+[U] https://www.gov.br/sei : HTTP Response: 302
+
+[U] https://www.gov.br/ans : HTTP Response: 301
+
+[U] https://www.gov.br/translate : HTTP Response: 400
+
+[U] https://www.gov.br/seit : HTTP Response: 403
+
+[U] https://www.gov.br/resource : Found!
+
+[U] https://www.gov.br/manager : HTTP Response: 302
+
+[U] https://www.gov.br/dsl : HTTP Response: 403
+
+[U] https://www.gov.br/chat : HTTP Response: 302
+
+[U] https://www.gov.br/abc : HTTP Response: 301
+
+[U] https://www.gov.br/Language : Found!
+
+[U] https://www.gov.br/Date : Found!
