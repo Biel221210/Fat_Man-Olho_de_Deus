@@ -189,6 +189,7 @@ elif menu == "2":
 
     if tool == "1":
         subprocess.run(["git", "clone", "https://github.com/Tuhinshubhra/RED_HAWK"], cwd=BASE_DIR)
+        subprocess.run(["sudo apt install php -y"], shell=True)
         subprocess.run(["php", "rhawk.php"], cwd=BASE_DIR / "RED_HAWK")
 
     elif tool == "2":
